@@ -14,7 +14,7 @@
     <title><?php if(is_front_page() || is_home()){ echo get_bloginfo('name'); } else{ echo wp_title(''); echo ' | '; echo get_bloginfo('name'); }?></title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url') ?>/assets/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url') ?>/assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php get_stylesheet_directory() ?>/assets/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url') ?>/assets/icon/favicon-16x16.png">
     <link rel="manifest" href="<?php bloginfo('template_url') ?>/assets/icon/site.webmanifest">
     <link rel="mask-icon" href="<?php bloginfo('template_url') ?>/assets/icon/safari-pinned-tab.svg" color="#f2f2f2">
@@ -31,10 +31,10 @@
 
     <header class="grid header-grid" id="header">
         <div class="header-logo">
-            <img src="<?php get_template_directory() ?>/assets/img/logo.svg" alt="Kenderlánc">
+            <img src="<?php get_stylesheet_directory() ?>/assets/img/logo.svg" alt="Kenderlánc">
         </div>
         <div class="header-icons">
-            <div class="header-icon"><img src="<?php get_template_directory() ?>/assets/img/icons/profile.svg" alt="Profil"></div>
+            <div class="header-icon"><img src="<?php get_stylesheet_directory() ?>/assets/img/icons/profile.svg" alt="Profil"></div>
             <div class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/cart.svg" alt="Kosár"></div>
             <div class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/heart.svg" alt="Kedvencek"></div>
             <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü"></div>
