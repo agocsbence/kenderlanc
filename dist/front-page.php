@@ -12,7 +12,7 @@ get_header();
 
 <section id="home-hero">
 	<div class="container">
-		<h1>Magyar ipari kender a hétköznapokra.</h1>
+		<h1 class="mb-2">Magyar ipari kender a hétköznapokra.</h1>
 		<div class="grid grid--home-tiles">
 			<a href="" class="grid-tile big-tile title-top bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/szolgaltatasok.png');">
 				<h2>Szolgáltatások</h2>
