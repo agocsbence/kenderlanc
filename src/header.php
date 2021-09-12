@@ -29,6 +29,10 @@
 
 <body <?php body_class(); ?>>
 
+<style>
+    #wpadminbar {display: none;}
+</style>
+
     <header class="grid header-grid" id="header">
         <div class="header-logo">
             <img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc">
