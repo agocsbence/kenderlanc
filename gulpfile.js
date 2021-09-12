@@ -23,7 +23,7 @@ gulp.task('styles', function() {
         .pipe(sass().on('error', sass.logError))
         // .pipe(postcss(processors))
         .pipe(cachebust({ type: 'timestamp' }))
-        .pipe(gulp.dest('dist/assets/css/'));
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('imagemin', async function() {
