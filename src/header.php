@@ -68,4 +68,4 @@
             <a href="">Ügyfélszolgálat</a>
         </div>
     </div>
-    <main>
+    <div id="page-content-wrapper">
