@@ -20,8 +20,8 @@ get_header();
 			<a href="" class="grid-tile bg--color bg--color-orange">
 				<h2>Tudástár</h2>
 			</a>
-			<a href="" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/nepszeru_termekek.png');">
-				<h2>Népszerű Termékek</h2>
+			<a href="/termekek" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/nepszeru_termekek.png');">
+				<h2>Termékek</h2>
 			</a>
 			<a href="" id="grid-extra" class="grid-tile big-tile text-dark">
 				<img src="<?php bloginfo('template_url') ?>/assets/img/extra_tartalmak.svg" alt="Extra tartalmak">
@@ -34,24 +34,6 @@ get_header();
 				<h2>Lexikon</h2>
 			</a>
 		</div>
-	</div>
-</section>
-<section>
-	<div class="container">
-	<?php  
-    $args = array(
-        'post_type'      => 'product'
-    );
-
-    $loop = new WP_Query( $args );
-
-    while ( $loop->have_posts() ) : $loop->the_post();
-        global $product;
-        echo '<br /><a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().' '.get_the_title().'</a>';
-    endwhile;
-
-    wp_reset_query();
-?>
 	</div>
 </section>
 
