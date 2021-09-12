@@ -115,7 +115,8 @@ header {
   left: 0;
   width: 100%;
   background: #fff;
-  z-index: 998; }
+  z-index: 998;
+  transition: all .6s ease; }
 
 main {
   padding-top: 9rem; }

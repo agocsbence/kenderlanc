@@ -29,7 +29,7 @@
 
 <body <?php body_class(); ?>>
 
-    <header class="grid header-grid">
+    <header class="grid header-grid" id="header">
         <div class="header-logo">
             <img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc">
         </div>
