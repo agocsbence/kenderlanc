@@ -31,10 +31,10 @@
 
     <header class="grid header-grid" id="header">
         <div class="header-logo">
-            <img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc">
+            <img src="<?php get_template_directory() ?>/assets/img/logo.svg" alt="Kenderlánc">
         </div>
         <div class="header-icons">
-            <div class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/profile.svg" alt="Profil"></div>
+            <div class="header-icon"><img src="<?php get_template_directory() ?>/assets/img/icons/profile.svg" alt="Profil"></div>
             <div class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/cart.svg" alt="Kosár"></div>
             <div class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/heart.svg" alt="Kedvencek"></div>
             <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü"></div>
