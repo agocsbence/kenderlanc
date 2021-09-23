@@ -77,6 +77,12 @@ table {
     @media screen and (min-width: 991px) {
       .grid.grid-4 {
         grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  .grid.grid-2-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+    @media screen and (min-width: 991px) {
+      .grid.grid-2-1 {
+        grid-template-columns: 2fr 1fr; } }
   .grid.grid-gap-1 {
     grid-gap: 1rem; }
   .grid.grid-gap-2 {
@@ -110,6 +116,13 @@ table {
 
 .font-italic {
   font-style: italic; }
+
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
+.woocommerce-page div.product div.summary {
+  float: none;
+  width: auto; }
 
 header {
   position: fixed;
