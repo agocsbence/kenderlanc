@@ -91,6 +91,8 @@ table {
   display: flex; }
   .flex.flex-row {
     flex-direction: row; }
+  .flex.flex-column {
+    flex-direction: column; }
   .flex.flex-row-center {
     align-items: center; }
   .flex.flex-space-between {
