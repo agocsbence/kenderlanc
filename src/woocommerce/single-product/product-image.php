@@ -21,5 +21,7 @@ defined( 'ABSPATH' ) || exit;
 if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
 	return;
 }
-
-do_action( 'woocommerce_product_thumbnails' ); ?>
+?>
+<div class="grid grid-2" id="product-images-wrapper">
+    <?php do_action( 'woocommerce_product_thumbnails' ); ?>
+</div>

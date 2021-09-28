@@ -57,9 +57,7 @@ $attachment_ids = $product->get_gallery_image_ids();
                 $image_url = wp_get_attachment_url($attachment_id);
                 ?>
                 <div class="swiper-slide thumbnail-slide">
-                    <a class="" href="<?php echo $image_url; ?>" style="background: url(<?php echo $image_url; ?>) center no-repeat;background-size:cover;">
-                        <img src="<?php echo $image_url; ?>" alt="gallery">
-                    </a>
+                    <img src="<?php echo $image_url; ?>" alt="gallery">
                 </div>
             <?php }
         ?>
