@@ -52,10 +52,10 @@ header {
         }
         .search-field input {
             background: $grey;
-            padding: .5rem 1rem;
-            border-radius: 2rem;
-            border: 0;
-            width: 100%;
+            padding: .5rem 1rem !important;
+            border-radius: 2rem !important;
+            border: 0 !important;
+            width: 100% !important;
         }
     }
 }

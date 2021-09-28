@@ -279,10 +279,10 @@ header {
         align-self: start; } }
     .header-grid .header-search .search-field input {
       background: #d8d8d850;
-      padding: .5rem 1rem;
-      border-radius: 2rem;
-      border: 0;
-      width: 100%; }
+      padding: .5rem 1rem !important;
+      border-radius: 2rem !important;
+      border: 0 !important;
+      width: 100% !important; }
 
 .navbar {
   position: fixed;
