@@ -466,7 +466,11 @@ footer {
 
 @media screen and (min-width: 991px) {
   #product-images-wrapper {
-    padding-right: 2rem; } }
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem; } }
 
 @media screen and (min-width: 991px) {
   #single-product-wrapper {
