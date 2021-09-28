@@ -259,7 +259,8 @@ header {
   .header-grid #desktopMenuClose {
     grid-area: menu;
     align-self: start;
-    justify-self: center; }
+    justify-self: center;
+    margin-top: 0; }
   .header-grid .header-icons {
     grid-area: icons;
     display: flex;
