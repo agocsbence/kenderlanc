@@ -141,3 +141,9 @@
 .woocommerce ul.products li.product h3 {
     padding: 0 !important;
 }
+
+//myaccount
+.woocommerce-MyAccount-navigation,
+.woocommerce-MyAccount-content {
+    flex: 1;
+}
