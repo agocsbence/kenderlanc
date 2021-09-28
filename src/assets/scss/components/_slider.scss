@@ -21,6 +21,10 @@
     height: 100%;
     box-sizing: border-box;
     padding: 0 10px;
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: block;
+    }
     .swiper-wrapper {
         height: 40%;
     }
