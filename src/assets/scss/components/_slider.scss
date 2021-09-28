@@ -4,28 +4,28 @@
     img {
         display: block;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
     }
 }
 
 #productSwiper {
-    height: 80%;
+    height: 100%;
     width: 100%;
     .swiper-wrapper {
-        height: 500px;
+        height: 100%;
     }
 }
 
 #productThumbnailSwiper {
+    width: 100%;
     height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
     .swiper-wrapper {
-        height: 150px;
+        height: 100%;
     }
     .swiper-slide {
-        width: 25%;
+        width: 33%;
         height: 100%;
         opacity: 0.4;
     }

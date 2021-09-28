@@ -349,23 +349,23 @@ footer {
   .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover; }
+    height: auto; }
 
 #productSwiper {
-  height: 80%;
+  height: 100%;
   width: 100%; }
   #productSwiper .swiper-wrapper {
-    height: 500px; }
+    height: 100%; }
 
 #productThumbnailSwiper {
+  width: 100%;
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0; }
   #productThumbnailSwiper .swiper-wrapper {
-    height: 150px; }
+    height: 100%; }
   #productThumbnailSwiper .swiper-slide {
-    width: 25%;
+    width: 33%;
     height: 100%;
     opacity: 0.4; }
   #productThumbnailSwiper .swiper-slide-thumb-active {
