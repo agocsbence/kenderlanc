@@ -143,9 +143,11 @@ table {
   border: 0 !important; }
 
 .woocommerce table.shop_table td {
-  border-top: 3px solid #172d22;
+  border-top: 2px solid #172d22;
   padding-top: 3rem;
   font-weight: 700; }
+  .woocommerce table.shop_table td a {
+    font-size: 30px; }
 
 #add_payment_method table.cart img,
 .woocommerce-cart table.cart img,
@@ -265,7 +267,8 @@ footer {
   margin-left: .6rem;
   display: none; }
 
-.btn {
+.btn,
+.button {
   background: #172d22;
   color: #fff;
   border: 2px solid #172d22;
@@ -278,11 +281,13 @@ footer {
   margin: 1rem 0;
   cursor: pointer;
   display: inline-block; }
-  .btn.btn-empty {
+  .btn.btn-empty,
+  .button.btn-empty {
     border: 2px solid #172d22;
     background: #fff;
     color: #172d22; }
-  .btn.btn-block {
+  .btn.btn-block,
+  .button.btn-block {
     display: inline-block; }
 
 .form input,

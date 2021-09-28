@@ -37,9 +37,12 @@
 }
 
 .woocommerce table.shop_table td {
-    border-top: 3px solid $green-dark;
+    border-top: 2px solid $green-dark;
     padding-top: 3rem;
     font-weight: 700;
+    a {
+        font-size: 30px;
+    }
 }
 
 #add_payment_method table.cart img,
