@@ -13,12 +13,15 @@
     margin: 1rem 0 !important;
     cursor: pointer !important;
     display: inline-block !important;
+    @media screen and (min-width: $tablet) {
+        padding: .8rem !important;
+    }
     &.btn-empty {
         border: 2px solid $green-dark !important;
         background: $white !important;
         color: $green-dark !important;
     }
     &.btn-block {
-        display: inline-block !important;
+        display: block !important;
     }
 }
