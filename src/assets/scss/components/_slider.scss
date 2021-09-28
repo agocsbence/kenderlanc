@@ -10,7 +10,7 @@
 
 .swiper-pagination-bullets {
     @media screen and (min-width: $tablet) {
-        bottom: 20px;
+        bottom: 20px !important;
     }
 }
 

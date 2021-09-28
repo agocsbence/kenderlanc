@@ -136,6 +136,9 @@ table {
 .woocommerce-message .button {
   float: none !important; }
 
+.related.products {
+  margin-top: 6rem; }
+
 header {
   position: fixed;
   top: 0;
@@ -365,7 +368,7 @@ footer {
 
 @media screen and (min-width: 991px) {
   .swiper-pagination-bullets {
-    bottom: 20px; } }
+    bottom: 20px !important; } }
 
 .swiper-pagination-bullet {
   background: #fff;
