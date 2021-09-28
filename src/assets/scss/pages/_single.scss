@@ -23,30 +23,37 @@
 }
 
 .single_add_to_cart_button {
-    background: $green-dark;
-    color: $white;
-    border: 2px solid $green-dark;
-    font-size: 13px;
-    padding: .4rem .8rem;
-    border-radius: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 1rem 0;
-    cursor: pointer;
-    display: inline-block;
+    background: $green-dark !important;
+    color: $white !important;
+    border: 2px solid $green-dark !important;
+    font-size: 13px !important;
+    padding: .4rem .8rem !important;
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    margin: 1rem 0 !important;
+    cursor: pointer !important;
+    display: inline-block !important;
 }
 
 input.qty {
-    background: $white;
-    color: $green-dark;
-    border: 2px solid $green-dark;
-    font-size: 13px;
-    padding: .4rem .8rem;
-    border-radius: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 1rem 0;
-    display: inline-block;
+    background: $white !important;
+    color: $green-dark !important;
+    border: 2px solid $green-dark !important;
+    font-size: 13px !important;
+    padding: .4rem .8rem !important;
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    margin: 1rem 0 !important;
+    display: inline-block !important;
+    width: 60px !important;
+}
+
+.woocommerce-variation-add-to-cart {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
 }
