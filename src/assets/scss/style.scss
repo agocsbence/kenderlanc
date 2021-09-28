@@ -126,7 +126,7 @@ li,
 p {
     font-size: 17px;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 p {
@@ -509,7 +509,7 @@ marquee {
 
 //classes
 .container {
-    max-width: 960px;
+    max-width: 90%;
     margin: 0 auto;
     position: relative;
     @media screen and (max-width: $tablet) {
