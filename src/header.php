@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.1.6">
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.1.7">
 </head>
 
 <body <?php body_class(); ?>>
@@ -36,7 +36,7 @@
 
     <header class="grid header-grid" id="header">
         <div class="header-logo">
-            <img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc">
+            <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc"></a>
         </div>
         <div class="header-icons">
             <a href="<?php echo get_home_url(); ?>/fiokom" class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/profile.svg" alt="Profil"></a>
@@ -65,7 +65,7 @@
             </div>
         </div>
         <nav>
-            <a href="" class="nav-item">Termékek</a>
+            <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item">Termékek</a>
             <a href="" class="nav-item">Szolgáltatások</a>
             <a href="" class="nav-item">Magazin</a>
         </nav>
@@ -73,8 +73,6 @@
             <a href="">Partnerek</a>
             <a href="">Rólunk</a>
             <a href="">Kapcsolat</a>
-            <a href="">Nagyker</a>
-            <a href="">Ügyfélszolgálat</a>
         </div>
     </div>
     <div id="page-content-wrapper">

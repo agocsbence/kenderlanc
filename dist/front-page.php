@@ -23,7 +23,7 @@ get_header();
 			<a href="/termekek" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/nepszeru_termekek.png');">
 				<h2>Termékek</h2>
 			</a>
-			<a href="" id="grid-extra" class="grid-tile big-tile text-dark">
+			<a href="" id="grid-extra" class="grid-tile big-tile text-dark mobile-only">
 				<img src="<?php bloginfo('template_url') ?>/assets/img/extra_tartalmak.svg" alt="Extra tartalmak">
 				<h2>Extra tartalmak</h2>
 			</a>

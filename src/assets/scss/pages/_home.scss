@@ -3,6 +3,9 @@
     // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
     margin-bottom: 9.5rem;
+    @media screen and (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     .grid-tile {
         border-radius: 1rem;
         background: $green;
