@@ -79,7 +79,7 @@ input.qty {
     justify-content: space-between !important;
 }
 
-.summary form.cart {
+.product-type-simple .summary form.cart {
     @media screen and (min-width: $tablet) {
         align-items: flex-start !important;
     }
