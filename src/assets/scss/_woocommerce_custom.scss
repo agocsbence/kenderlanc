@@ -15,7 +15,8 @@
     align-items: center !important;
     font-weight: 700;
     padding: 1rem 2rem !important;
-    &:before {
+    &:before,
+    &:after {
         display: none;
     }
 }

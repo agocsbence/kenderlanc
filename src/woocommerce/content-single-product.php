@@ -46,7 +46,7 @@ if ( post_password_required() ) {
         do_action( 'woocommerce_before_single_product_summary' );
         ?>
 
-        <div class="summary entry-summary gridd21">
+        <div class="summary entry-summary" id="single-product-wrapper">
             <?php
             /**
              * Hook: woocommerce_single_product_summary.

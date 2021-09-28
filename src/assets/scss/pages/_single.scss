@@ -4,6 +4,15 @@
     }
 }
 
+#single-product-wrapper {
+    @media screen and (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+    }
+}
+
 .woocommerce div.product form.cart .reset_variations {
     display: none !important;
 }

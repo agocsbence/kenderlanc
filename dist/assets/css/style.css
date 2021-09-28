@@ -130,7 +130,7 @@ table {
   align-items: center !important;
   font-weight: 700;
   padding: 1rem 2rem !important; }
-  .woocommerce-message:before {
+  .woocommerce-message:before, .woocommerce-message:after {
     display: none; }
 
 .woocommerce-message .button {
@@ -467,6 +467,13 @@ footer {
 @media screen and (min-width: 991px) {
   #product-images-wrapper {
     padding-right: 2rem; } }
+
+@media screen and (min-width: 991px) {
+  #single-product-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem; } }
 
 .woocommerce div.product form.cart .reset_variations {
   display: none !important; }
