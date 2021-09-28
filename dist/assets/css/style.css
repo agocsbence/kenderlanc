@@ -98,11 +98,16 @@ table {
     flex-direction: column; }
   .flex.flex-row-center {
     align-items: center; }
+  .flex.flex-row-start {
+    align-items: flex-start; }
   .flex.flex-space-between {
     justify-content: space-between; }
   @media screen and (max-width: 991px) {
     .flex.flex-m-column {
       flex-direction: column; } }
+  @media screen and (max-width: 991px) {
+    .flex.flex-m-column-reverse {
+      flex-direction: column-reverse; } }
 
 .font-300 {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -182,6 +187,13 @@ table {
 .woocommerce-cart table.cart img,
 .woocommerce-checkout table.cart img {
   width: 100px !important; }
+
+#shipto-different-address-checkbox {
+  width: 20px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-right: 1rem !important;
+  height: 20px !important; }
 
 header {
   position: fixed;
@@ -303,7 +315,7 @@ footer {
   color: #fff !important;
   border: 2px solid #172d22 !important;
   font-size: 13px !important;
-  padding: .4rem .8rem !important;
+  padding: .8rem !important;
   border-radius: 12px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
@@ -311,11 +323,6 @@ footer {
   margin: 1rem 0 !important;
   cursor: pointer !important;
   display: inline-block !important; }
-  @media screen and (min-width: 991px) {
-    .btn,
-    .button,
-    .button.alt {
-      padding: .8rem !important; } }
   .btn.btn-empty,
   .button.btn-empty,
   .button.alt.btn-empty {

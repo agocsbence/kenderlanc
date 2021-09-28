@@ -61,12 +61,20 @@
     &.flex-row-center {
         align-items: center;
     }
+    &.flex-row-start {
+        align-items: flex-start;
+    }
     &.flex-space-between {
         justify-content: space-between;
     }
     &.flex-m-column {
         @media screen and (max-width: $tablet) {
             flex-direction: column;
+        }
+    }
+    &.flex-m-column-reverse {
+        @media screen and (max-width: $tablet) {
+            flex-direction: column-reverse;
         }
     }
 }
