@@ -541,7 +541,7 @@ input.qty {
   justify-content: space-between !important; }
 
 .summary form.cart:before, .summary form.cart:after {
-  display: none; }
+  display: none !important; }
 
 .price {
   font-size: 28px !important;

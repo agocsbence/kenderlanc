@@ -82,7 +82,7 @@ input.qty {
 .summary form.cart {
     &:before,
     &:after {
-        display: none;
+        display: none !important;
     }
 }
 
