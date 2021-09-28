@@ -25,19 +25,6 @@ function setPostViews($postID) {
     }
 }
 
-//SEARCH
-function mySearchFilter($articleQuery) {
-    if( isset($_GET['search-type']) && $_GET['search-type']){
-        $type = $_GET['search-type'];
-    }
-    if ($articleQuery->is_search && $type == 'product') {
-        $articleQuery->set('post_type', 'product');
-    };
-    return $articleQuery;
-};
-
-add_filter('pre_get_posts','mySearchFilter');
-
 //WOOCOMMERCE
 function mytheme_add_woocommerce_support() {
 	add_theme_support( 'woocommerce' );
