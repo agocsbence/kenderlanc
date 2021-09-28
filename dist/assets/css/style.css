@@ -277,7 +277,7 @@ header {
     @media screen and (min-width: 991px) {
       .header-grid .header-search {
         align-self: start; } }
-    .header-grid .header-search .search-field input {
+    .header-grid .header-search input.search-field {
       background: #d8d8d850;
       padding: .5rem 1rem !important;
       border-radius: 2rem !important;
