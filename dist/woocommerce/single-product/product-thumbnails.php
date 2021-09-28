@@ -33,11 +33,9 @@ $attachment_ids = $product->get_gallery_image_ids();
 // }
 
 ?>
-
-<div class="pd-gallery-slider">
-    <div class="swiper-container">
-       <div class="swiper-wrapper">
-        <?php
+<div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+		<?php
             foreach($attachment_ids as $attachment_id) {
                 $image_url = wp_get_attachment_url($attachment_id);
                 ?>
@@ -48,7 +46,45 @@ $attachment_ids = $product->get_gallery_image_ids();
                 </div>
             <?php }
         ?>
-    </div>
-    <div class="gal-btn-prev fx"></div>
-    <div class="gal-btn-next fx"></div>
+	</div>
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
 </div>
+<div thumbsSlider="" class="swiper mySwiper">
+	<div class="swiper-wrapper">
+		<?php
+            foreach($attachment_ids as $attachment_id) {
+                $image_url = wp_get_attachment_url($attachment_id);
+                ?>
+                <div class="swiper-slide thumbnail-slide">
+                    <a class="" href="<?php echo $image_url; ?>" style="background: url(<?php echo $image_url; ?>) center no-repeat;background-size:cover;">
+                        <img src="<?php echo $image_url; ?>" alt="gallery">
+                    </a>
+                </div>
+            <?php }
+        ?>
+	</div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper(".mySwiper", {
+		spaceBetween: 10,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+	});
+	var swiper2 = new Swiper(".mySwiper2", {
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: swiper,
+		},
+	});
+</script>
