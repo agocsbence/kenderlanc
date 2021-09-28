@@ -254,6 +254,8 @@ header {
     grid-area: logo; }
     .header-grid .header-logo img {
       max-width: 5rem; }
+  .header-grid #desktopMenuClose {
+    grid-area: menu; }
   .header-grid .header-icons {
     grid-area: icons;
     display: flex;
@@ -297,6 +299,9 @@ header {
   background: #fff;
   z-index: 999;
   display: none; }
+  @media screen and (min-width: 991px) {
+    .navbar {
+      width: 50vw; } }
   .navbar.opened {
     display: block; }
   .navbar .header-icon {
@@ -305,6 +310,9 @@ header {
     margin-bottom: 3rem;
     margin-left: 1rem;
     margin-top: 1rem; }
+    @media screen and (min-width: 991px) {
+      .navbar nav {
+        padding-left: 2rem; } }
     .navbar nav .nav-item {
       font-size: 28px;
       line-height: 35px;
@@ -316,6 +324,9 @@ header {
         text-decoration: underline; }
   .navbar .sub-menu {
     margin-left: 1rem; }
+    @media screen and (min-width: 991px) {
+      .navbar .sub-menu {
+        padding-left: 2rem; } }
     .navbar .sub-menu a {
       font-weight: 300;
       font-size: 28px;

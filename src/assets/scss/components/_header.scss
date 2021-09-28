@@ -20,6 +20,9 @@ header {
             max-width: 5rem;
         }
     }
+    #desktopMenuClose {
+        grid-area: menu;
+    }
     .header-icons {
         grid-area: icons;
         display: flex;

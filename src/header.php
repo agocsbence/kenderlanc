@@ -56,6 +56,7 @@
     </header>
     <div class="navbar" id="navbar">
         <div class="nav-header grid header-grid">
+            <div id="desktopMenuClose" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/close.svg" alt="Bezár"></div>
             <div class="header-logo">
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc"></a>
             </div>

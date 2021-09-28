@@ -7,6 +7,9 @@
     background: $white;
     z-index: 999;
     display: none;
+    @media screen and (min-width: $tablet) {
+        width: 50vw;
+    }
     &.opened {
         display: block;
     }
@@ -17,6 +20,9 @@
         margin-bottom: 3rem;
         margin-left: 1rem;
         margin-top: 1rem;
+        @media screen and (min-width: $tablet) {
+            padding-left: 2rem;
+        }
         .nav-item {
             font-size: 28px;
             line-height: 35px;
@@ -31,6 +37,9 @@
     }
     .sub-menu {
         margin-left: 1rem;
+        @media screen and (min-width: $tablet) {
+            padding-left: 2rem;
+        }
         a {
             font-weight: 300;
             font-size: 28px;
