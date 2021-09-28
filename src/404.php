@@ -8,7 +8,7 @@ $home = get_home_url();
 header( "refresh:5;url=" . $home );
 ?>
 
-<div id="error-404">
+<div id="error-404" class="container">
     <div class="flex flex-row flex-row-start flex-space-between flex-m-column-reverse">
         <div class="text-content">
             <h1 class="lead mb-2">404 - Hupsz!</h1>
