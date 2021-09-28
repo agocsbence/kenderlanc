@@ -83,9 +83,6 @@ $attachment_ids = $product->get_gallery_image_ids();
 		slidesPerView: 3,
 		freeMode: true,
 		watchSlidesProgress: true,
-		pagination: {
-        	el: ".swiper-pagination",
-        },
 	});
 	var swiper2 = new Swiper("#productSwiper", {
 		spaceBetween: 10,
@@ -93,6 +90,9 @@ $attachment_ids = $product->get_gallery_image_ids();
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
+		pagination: {
+        	el: ".swiper-pagination",
+        },
 		thumbs: {
 			swiper: swiper,
 		},
