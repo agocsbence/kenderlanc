@@ -57,3 +57,10 @@ input.qty {
     align-items: center !important;
     justify-content: space-between !important;
 }
+
+.price {
+    font-size: 28px !important;
+    line-height: 35px !important;
+    font-weight: 700 !important;
+    color: $green-dark !important;
+}
