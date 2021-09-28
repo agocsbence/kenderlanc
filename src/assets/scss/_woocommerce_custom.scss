@@ -119,3 +119,21 @@
 .woocommerce ul.order_details li {
     margin-top: 1rem;
 }
+
+//products ordering
+.woocommerce .woocommerce-ordering select {
+    padding: .8rem;
+    border-radius: 12px;
+    border: 0;
+    appearance: none;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        background: red;
+    }
+}
