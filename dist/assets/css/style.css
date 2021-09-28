@@ -766,10 +766,10 @@ p {
   line-height: 22px;
   font-weight: 700; }
 
-.single-text-content p {
+.text-block p {
   font-weight: 300; }
 
-.single-text-content strong {
+.text-block strong {
   margin-top: 2rem; }
 
 p {
