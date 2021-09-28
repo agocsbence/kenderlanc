@@ -363,7 +363,7 @@ footer {
   box-sizing: border-box;
   padding: 0 10px; }
   #productThumbnailSwiper .swiper-wrapper {
-    height: 100px; }
+    height: 40%; }
   #productThumbnailSwiper .swiper-slide {
     width: 33%;
     height: 100%;
@@ -517,7 +517,7 @@ li,
 p {
   font-size: 17px;
   line-height: 22px;
-  font-weight: 400; }
+  font-weight: 700; }
 
 p {
   margin-bottom: 15px; }
@@ -805,7 +805,7 @@ marquee img {
   text-align: center; }
 
 .container {
-  max-width: 960px;
+  max-width: 90%;
   margin: 0 auto;
   position: relative; }
   @media screen and (max-width: 991px) {
