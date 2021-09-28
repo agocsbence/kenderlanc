@@ -438,6 +438,10 @@ form textarea {
     content: ' *' !important;
     color: red !important; }
 
+.form input[type="submit"],
+form input[type="submit"] {
+  max-width: 140px; }
+
 .filter-wrapper {
   padding: .8rem 1rem;
   background: #d8d8d850;
@@ -796,7 +800,8 @@ p {
   font-weight: 700; }
 
 .text-block p {
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 20px; }
 
 .text-block h2 {
   margin-top: 2rem;

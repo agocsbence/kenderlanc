@@ -18,6 +18,9 @@ form {
             color: red !important;
         }
     }
+    input[type="submit"] {
+        max-width: 140px;
+    }
 }
 
 .filter-wrapper {
