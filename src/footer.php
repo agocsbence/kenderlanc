@@ -27,7 +27,7 @@
         </div>
     </footer>
 
-    <script src="<?php bloginfo('template_url') ?>/assets/js/scripts.js"></script>
+    <script src="<?php bloginfo('template_url') ?>/assets/js/scripts.js?v=1.0.0"></script>
     <?php wp_footer(); ?>
 </body>
 
