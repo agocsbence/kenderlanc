@@ -35,7 +35,7 @@ $attachment_ids = $product->get_gallery_image_ids();
 // }
 
 ?>
-<div class="swiper" id="productSwiper">
+<div class="swiper mb-1" id="productSwiper">
     <div class="swiper-wrapper">
 		<?php
             foreach($attachment_ids as $attachment_id) {
@@ -52,7 +52,7 @@ $attachment_ids = $product->get_gallery_image_ids();
 	<div class="swiper-button-next"></div>
 	<div class="swiper-button-prev"></div>
 </div>
-<div thumbsSlider="" class="swiper" id="productThumbnailSwiper">
+<div class="swiper" id="productThumbnailSwiper">
 	<div class="swiper-wrapper">
 		<?php
             foreach($attachment_ids as $attachment_id) {
