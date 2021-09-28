@@ -41,14 +41,17 @@
         <div class="header-icons">
             <a href="<?php echo get_home_url(); ?>/fiokom" class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/profile.svg" alt="Profil"></a>
             <a href="<?php echo get_home_url(); ?>/kosar" class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/cart.svg" alt="Kosár"></a>
-            <div class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/heart.svg" alt="Kedvencek"></div>
+            <div class="header-icon hide"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/heart.svg" alt="Kedvencek"></div>
             <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü"></div>
         </div>
         <div id="desktopMenuToggler" class="header-menu desktop-only menu-toggler">
             <img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü">
         </div>
         <div class="header-search">
-            <input type="text" name="s" id="searchInput">
+            <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Keresés', 'placeholder', 'kenderlanc' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+                <button type="submit" class="search-submit btn">Keresés</button>
+            </form>
         </div>
     </header>
     <div class="navbar" id="navbar">
