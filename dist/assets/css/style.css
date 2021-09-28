@@ -540,7 +540,7 @@ form textarea {
     border-radius: 1rem;
     background: #b9d461;
     aspect-ratio: 1;
-    display: flex !important;
+    display: flex;
     align-items: flex-end;
     justify-content: flex-start;
     padding: 2rem 1rem;
@@ -1080,16 +1080,16 @@ marquee img {
   color: #fff; }
 
 .mobile-only {
-  display: none !important; }
+  display: none; }
   @media screen and (max-width: 991px) {
     .mobile-only {
-      display: block !important; } }
+      display: inherit; } }
 
 .desktop-only {
-  display: block !important; }
+  display: inherit; }
   @media screen and (max-width: 991px) {
     .desktop-only {
-      display: none !important; } }
+      display: none; } }
 
 .text-right {
   text-align: right; }
