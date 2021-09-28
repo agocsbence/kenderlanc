@@ -547,16 +547,16 @@ marquee {
 }
 
 .mobile-only {
-    display: none;
+    display: none !important;
     @media screen and (max-width: $tablet) {
-        display: inherit;
+        display: inherit !important;
     }
 }
 
 .desktop-only {
-    display: inherit;
+    display: inherit !important;
     @media screen and (max-width: $tablet) {
-        display: none;
+        display: none !important;
     }
 }
 
