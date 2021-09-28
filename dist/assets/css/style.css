@@ -540,6 +540,10 @@ input.qty {
   align-items: center !important;
   justify-content: space-between !important; }
 
+@media screen and (min-width: 991px) {
+  .summary form.cart {
+    align-items: flex-start; } }
+
 .summary form.cart:before, .summary form.cart:after {
   display: none !important; }
 

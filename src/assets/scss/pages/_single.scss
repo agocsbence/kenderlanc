@@ -80,6 +80,9 @@ input.qty {
 }
 
 .summary form.cart {
+    @media screen and (min-width: $tablet) {
+        align-items: flex-start;
+    }
     &:before,
     &:after {
         display: none !important;
