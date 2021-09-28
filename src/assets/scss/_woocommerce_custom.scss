@@ -129,3 +129,13 @@
     font-weight: 700;
     background: $grey;
 }
+
+.woocommerce ul.products li.product .price {
+    font-weight: 300;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+    padding: 0 !important;
+}
