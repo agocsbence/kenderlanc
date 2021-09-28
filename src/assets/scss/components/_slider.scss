@@ -12,12 +12,18 @@
 #productSwiper {
     height: 80%;
     width: 100%;
+    .swiper-wrapper {
+        height: 500px;
+    }
 }
 
 #productThumbnailSwiper {
     height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
+    .swiper-wrapper {
+        height: 150px;
+    }
     .swiper-slide {
         width: 25%;
         height: 100%;

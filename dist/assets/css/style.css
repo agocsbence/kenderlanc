@@ -355,11 +355,15 @@ footer {
 #productSwiper {
   height: 80%;
   width: 100%; }
+  #productSwiper .swiper-wrapper {
+    height: 500px; }
 
 #productThumbnailSwiper {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0; }
+  #productThumbnailSwiper .swiper-wrapper {
+    height: 150px; }
   #productThumbnailSwiper .swiper-slide {
     width: 25%;
     height: 100%;
