@@ -6,6 +6,7 @@
 
 <?php if(isset($_GET['post_type'])) {
     $type = $_GET['post_type'];
+    var_dump($type);
     if($type == 'post') {
         echo '<h1>Bejegyzések a találatban</h1>';
     } elseif($type == 'product') {
