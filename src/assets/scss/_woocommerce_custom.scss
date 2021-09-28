@@ -28,3 +28,22 @@
 .related.products {
     margin-top: 6rem;
 }
+
+//cart
+.woocommerce-cart-form {
+    table {
+        border: 0 !important;
+    }
+}
+
+.woocommerce table.shop_table td {
+    border-top: 3px solid $green-dark;
+    padding-top: 3rem;
+    font-weight: 700;
+}
+
+#add_payment_method table.cart img,
+.woocommerce-cart table.cart img,
+.woocommerce-checkout table.cart img {
+    width: 100px !important;
+}
