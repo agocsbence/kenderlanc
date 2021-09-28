@@ -22,7 +22,9 @@
                 </a>
             <?php endwhile; ?>
         </div>    
-    <? }
+    <? } else { ?>
+        <h1>Itt vagyok</h1>
+    <?php }
 } else { ?>
 	<div class="container grid grid-4">
         <?php while ( have_posts() ) : the_post(); ?>
