@@ -133,6 +133,9 @@ table {
   .woocommerce-message:before {
     display: none; }
 
+.woocommerce-message .button {
+  float: none !important; }
+
 header {
   position: fixed;
   top: 0;
@@ -359,6 +362,14 @@ footer {
     display: block;
     width: 100%;
     height: auto; }
+
+.swiper-pagination-bullet {
+  background: #fff;
+  border: 2px solid #172d22;
+  opacity: 1; }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #172d22;
+    opacity: 1; }
 
 #productSwiper {
   height: 100%;

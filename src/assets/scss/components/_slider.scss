@@ -8,6 +8,16 @@
     }
 }
 
+.swiper-pagination-bullet {
+    background: $white;
+    border: 2px solid $green-dark;
+    opacity: 1;
+    &.swiper-pagination-bullet-active {
+        background: $green-dark;
+        opacity: 1;
+    }
+}
+
 #productSwiper {
     height: 100%;
     width: 100%;
