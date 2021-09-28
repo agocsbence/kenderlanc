@@ -62,6 +62,7 @@ $attachment_ids = $product->get_gallery_image_ids();
             <?php }
         ?>
 	</div>
+	<h3 class="mb-1 <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></h3>
 </div>
 
 <!-- Swiper JS -->
