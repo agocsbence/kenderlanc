@@ -72,7 +72,7 @@
         <div class="sub-menu">
             <a href="">Partnerek</a>
             <a href="">Rólunk</a>
-            <a href="">Kapcsolat</a>
+            <a href="<?php echo get_home_url(); ?>/kapcsolat">Kapcsolat</a>
         </div>
     </div>
     <div id="page-content-wrapper">

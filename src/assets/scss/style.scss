@@ -140,6 +140,9 @@ p {
     h2 {
         margin-top: 2rem;
         margin-bottom: 0;
+        &:first-child {
+            margin-top: 0;
+        }
     }
 }
 

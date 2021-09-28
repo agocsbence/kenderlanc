@@ -772,6 +772,8 @@ p {
 .text-block h2 {
   margin-top: 2rem;
   margin-bottom: 0; }
+  .text-block h2:first-child {
+    margin-top: 0; }
 
 p {
   margin-bottom: 15px; }
