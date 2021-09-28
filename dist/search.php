@@ -6,17 +6,13 @@
 get_header(); ?>
 
 <section class="container py-3">
-    <h1 class="mb-1">Keresés</h1>
+    <h1 class="page-title mb-1"><?php printf( __( 'Keresés: %s', 'kenderlanc' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 </section>
 
 <section id="primary" class="content-area">
     <div id="content" class="site-content" role="main">
 
     <?php if ( have_posts() ) : ?>
-
-        <header class="page-header">
-            <h1 class="page-title"><?php printf( __( 'Keresés: %s', 'shape' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-        </header><!-- .page-header -->
 
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
