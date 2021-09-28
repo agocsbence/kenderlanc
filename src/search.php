@@ -4,8 +4,8 @@
     <h1 class="mb-1">Keresés</h1>
 </section>
 
-<?php if(isset($_GET['post_type'])) {
-    $type = $_GET['post_type'];
+<?php if(isset($_GET['search-type'])) {
+    $type = $_GET['search-type'];
     var_dump($type);
     if($type == 'post') {
         echo '<h1>Bejegyzések a találatban</h1>';

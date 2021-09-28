@@ -50,8 +50,8 @@
         <div class="header-search">
             <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <input type="search" class="search-field" placeholder="Keresés" value="<?php echo get_search_query(); ?>" name="s" />
-                <input type="hidden" name="post_type" value="product" />
-                <input type="hidden" name="post_type" value="post" />
+                <input type="hidden" name="search-type" value="product" />
+                <input type="hidden" name="search-type" value="post" />
                 <!-- <button type="submit" class="search-submit btn">Keresés</button> -->
             </form>
         </div>
