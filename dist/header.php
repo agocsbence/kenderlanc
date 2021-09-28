@@ -39,8 +39,8 @@
             <img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc">
         </div>
         <div class="header-icons">
-            <div class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/profile.svg" alt="Profil"></div>
-            <div class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/cart.svg" alt="Kosár"></div>
+            <a href="<?php echo get_home_url(); ?>/fiokom" class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/profile.svg" alt="Profil"></a>
+            <a href="<?php echo get_home_url(); ?>/kosar" class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/cart.svg" alt="Kosár"></a>
             <div class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/heart.svg" alt="Kedvencek"></div>
             <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü"></div>
         </div>
