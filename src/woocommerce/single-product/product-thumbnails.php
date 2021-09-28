@@ -50,8 +50,8 @@ $attachment_ids = $product->get_gallery_image_ids();
         ?>
 	</div>
 	<div class="swiper-pagination"></div>
-	<div class="swiper-button-next"></div>
-	<div class="swiper-button-prev"></div>
+	<!-- <div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div> -->
 </div>
 <div class="swiper" id="productThumbnailSwiper">
 	<div class="swiper-wrapper">
@@ -86,10 +86,10 @@ $attachment_ids = $product->get_gallery_image_ids();
 	});
 	var swiper2 = new Swiper("#productSwiper", {
 		spaceBetween: 10,
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
+		// navigation: {
+		// 	nextEl: ".swiper-button-next",
+		// 	prevEl: ".swiper-button-prev",
+		// },
 		pagination: {
         	el: ".swiper-pagination",
         },
