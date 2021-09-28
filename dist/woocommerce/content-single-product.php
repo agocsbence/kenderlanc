@@ -54,8 +54,8 @@ if ( post_password_required() ) {
              * @hooked woocommerce_template_single_title - 5 (removed)
              * @hooked woocommerce_show_product_images - 5 (harom)
              * @hooked woocommerce_template_single_rating - 10
-             * @hooked woocommerce_template_single_excerpt - 10
-             * @hooked woocommerce_template_single_price - 20
+             * @hooked woocommerce_template_single_price - 10
+             * @hooked woocommerce_template_single_excerpt - 20
              * @hooked woocommerce_template_single_add_to_cart - 30
              * @hooked woocommerce_template_single_meta - 40
              * @hooked woocommerce_template_single_sharing - 50
