@@ -13,8 +13,9 @@
         echo '<h1>Termékek a találatban</h1>';
     }
 } else { ?>
-	<div class="grid grid-3">
+	<div class="container grid grid-3">
         <?php while ( have_posts() ) : the_post(); ?>
+            <?php global $product; ?>
             <a href="<?php echo get_permalink(); ?>" class="product-tile">
                 <img src="<?php echo woocommerce_get_product_thumbnail(); ?>" alt="Termék neve">
                 <h2 class="product-name"><?php echo get_the_title(); ?></h2>
