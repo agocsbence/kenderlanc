@@ -17,11 +17,9 @@ get_header(); ?>
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <?php global $product; ?>
             <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
                 <?php echo woocommerce_get_product_thumbnail(); ?>
                 <h2 class="product-name"><?php echo get_the_title(); ?></h2>
-                <p class="product-price"><?php $product->get_price(); ?></p>
             </a>
 
         <?php endwhile; ?>
