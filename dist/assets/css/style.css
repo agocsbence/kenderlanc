@@ -196,13 +196,17 @@ table {
   height: 20px !important; }
 
 #empty-cart .text-content,
-#empty-cart .image-content {
+#empty-cart .image-content,
+#no-result .text-content,
+#no-result .image-content {
   flex: 1; }
 
-#empty-cart .text-content {
+#empty-cart .text-content,
+#no-result .text-content {
   margin-top: 2rem; }
   @media screen and (min-width: 991px) {
-    #empty-cart .text-content {
+    #empty-cart .text-content,
+    #no-result .text-content {
       margin-right: 2rem; } }
 
 .woocommerce .woocommerce-customer-details address p {

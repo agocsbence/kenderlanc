@@ -33,7 +33,7 @@ get_header(); ?>
                 <div class="text-content">
                     <h1 class="lead mb-2">Nincs találat!</h1>
                 </div>
-                <div class="image-content">
+                <div class="image-content mb-2">
                     <img src="<?php bloginfo('template_url') ?>/assets/img/no-result.png" alt="Nincs eredmény">
                 </div>
             </div>
