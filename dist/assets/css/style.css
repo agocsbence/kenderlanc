@@ -585,8 +585,14 @@ form textarea {
       background-size: cover !important; }
     .grid--home-tiles .grid-tile.bg--color.bg--color-green {
       background-color: #b9d461; }
+    .grid--home-tiles .grid-tile.bg--color.bg--color-green1 {
+      background-color: #50a485; }
+    .grid--home-tiles .grid-tile.bg--color.bg--color-green2 {
+      background-color: #2b694b; }
     .grid--home-tiles .grid-tile.bg--color.bg--color-orange {
       background-color: #f4c560; }
+    .grid--home-tiles .grid-tile.bg--color.bg--color-red {
+      background-color: #ff5757; }
     .grid--home-tiles .grid-tile#grid-extra {
       background-color: #fdf6e1;
       background-size: 60% !important; }

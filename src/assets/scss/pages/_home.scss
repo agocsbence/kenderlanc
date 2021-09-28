@@ -39,10 +39,19 @@
         }
         &.bg--color {
             &.bg--color-green {
-                background-color: $green
+                background-color: $green;
+            }
+            &.bg--color-green1 {
+                background-color: $green1;
+            }
+            &.bg--color-green2 {
+                background-color: $green2;
             }
             &.bg--color-orange {
-                background-color: $orange
+                background-color: $orange;
+            }
+            &.bg--color-red {
+                background-color: $red;
             }
         }
         &#grid-extra {
