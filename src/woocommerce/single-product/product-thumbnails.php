@@ -33,14 +33,14 @@ $attachment_ids = $product->get_gallery_image_ids();
 // }
 
 ?>
-<div class="swiper mySwiper2">
+<div class="swiper" id="productSwiper">
     <div class="swiper-wrapper">
 		<?php
             foreach($attachment_ids as $attachment_id) {
                 $image_url = wp_get_attachment_url($attachment_id);
                 ?>
-                <div class="swiper-slide pd-gal-slide fx fx-jc fx-ac">
-                    <a class="fx fx-wrap fx-ae" data-fancybox="gallery" href="<?php echo $image_url; ?>" style="background: url(<?php echo $image_url; ?>) center no-repeat;background-size:cover;">
+                <div class="swiper-slide">
+                    <a class="" data-fancybox="gallery" href="<?php echo $image_url; ?>" style="background: url(<?php echo $image_url; ?>) center no-repeat;background-size:cover;">
                         <img src="<?php echo $image_url; ?>" alt="gallery">
                     </a>
                 </div>
@@ -50,7 +50,7 @@ $attachment_ids = $product->get_gallery_image_ids();
 	<div class="swiper-button-next"></div>
 	<div class="swiper-button-prev"></div>
 </div>
-<div thumbsSlider="" class="swiper mySwiper">
+<div thumbsSlider="" class="swiper" id="productThumbnailSwiper">
 	<div class="swiper-wrapper">
 		<?php
             foreach($attachment_ids as $attachment_id) {
@@ -71,13 +71,13 @@ $attachment_ids = $product->get_gallery_image_ids();
 
 <!-- Initialize Swiper -->
 <script>
-	var swiper = new Swiper(".mySwiper", {
+	var swiper = new Swiper("#productThumbnailSwiper", {
 		spaceBetween: 10,
 		slidesPerView: 3,
 		freeMode: true,
 		watchSlidesProgress: true,
 	});
-	var swiper2 = new Swiper(".mySwiper2", {
+	var swiper2 = new Swiper("#productSwiper", {
 		spaceBetween: 10,
 		navigation: {
 			nextEl: ".swiper-button-next",
