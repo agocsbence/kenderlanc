@@ -96,4 +96,10 @@
     .image-content {
         flex: 1;
     }
+    .text-content {
+        margin-top: 2rem;
+        @media screen and (min-width: $tablet) {
+            margin-right: 2rem;
+        }
+    }
 }

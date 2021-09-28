@@ -199,6 +199,12 @@ table {
 #empty-cart .image-content {
   flex: 1; }
 
+#empty-cart .text-content {
+  margin-top: 2rem; }
+  @media screen and (min-width: 991px) {
+    #empty-cart .text-content {
+      margin-right: 2rem; } }
+
 header {
   position: fixed;
   top: 0;
