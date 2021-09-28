@@ -9,7 +9,7 @@ get_header(); ?>
     <h1 class="page-title mb-1"><?php printf( __( 'Keresés: %s', 'kenderlanc' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 </section>
 
-<section id="primary" class="content-area">
+<section id="primary" class="content-area container">
     <div id="content" class="site-content grid grid-4" role="main">
 
     <?php if ( have_posts() ) : ?>
