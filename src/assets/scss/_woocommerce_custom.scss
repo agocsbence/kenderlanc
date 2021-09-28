@@ -7,11 +7,14 @@
 }
 
 .woocommerce-message {
-    border-top: 2px solid $green1 !important;
-    background: $green !important;
+    border-top: 2px solid $green !important;
     color: $green-dark !important;
     display: flex !important;
     flex-direction: row-reverse !important;
     justify-content: space-between !important;
     align-items: center !important;
+    font-weight: 700;
+    &:before {
+        display: none;
+    }
 }
