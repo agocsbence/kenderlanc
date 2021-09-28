@@ -7,13 +7,13 @@ get_header();
     <h1 class="mb-1"><?php the_title(); ?></h1>
     <div class="grid grid-2 grid-gap-2">
         <div class="text-block">
-            <p class="strong">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ullam temporibus exercitationem laborum eos vitae porro? Tempora, fugit in tenetur neque eveniet, error est modi minus alias distinctio ducimus ipsum.</p>
+            <p><strong>Title</strong></p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ullam temporibus exercitationem laborum eos vitae porro? Tempora, fugit in tenetur neque eveniet, error est modi minus alias distinctio ducimus ipsum.</p>
         </div>
         <div class="text-block">
-            <p class="strong">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ullam temporibus exercitationem laborum eos vitae porro? Tempora, fugit in tenetur neque eveniet, error est modi minus alias distinctio ducimus ipsum.</p>
+            <p><strong>Title</strong></p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ullam temporibus exercitationem laborum eos vitae porro? Tempora, fugit in tenetur neque eveniet, error est modi minus alias distinctio ducimus ipsum.</p>
-            <p class="strong">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ullam temporibus exercitationem laborum eos vitae porro? Tempora, fugit in tenetur neque eveniet, error est modi minus alias distinctio ducimus ipsum.</p>
+            <p><strong>Title</strong></p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ullam temporibus exercitationem laborum eos vitae porro? Tempora, fugit in tenetur neque eveniet, error est modi minus alias distinctio ducimus ipsum.</p>
         </div>
     </div>
