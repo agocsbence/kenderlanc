@@ -244,6 +244,10 @@ table {
   float: none !important;
   width: auto !important; }
 
+.woocommerce-MyAccount-navigation li {
+  font-size: 28px;
+  line-height: 35px; }
+
 header {
   position: fixed;
   top: 0;
@@ -750,7 +754,8 @@ h6 {
 
 h1,
 h2,
-h3 {
+h3,
+.woocommerce-MyAccount-navigation li {
   font-size: 28px;
   line-height: 35px;
   font-weight: 700;
