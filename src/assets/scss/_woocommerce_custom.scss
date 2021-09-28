@@ -148,6 +148,9 @@
     flex: 1;
     float: none !important;
     width: auto !important;
+    @media screen and (max-width: $tablet) {
+        width: 100% !important;
+    }
 }
 
 .woocommerce-MyAccount-navigation li {
