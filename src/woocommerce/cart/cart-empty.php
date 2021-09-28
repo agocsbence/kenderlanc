@@ -23,10 +23,10 @@ defined( 'ABSPATH' ) || exit;
 // do_action( 'woocommerce_cart_is_empty' );
 ?>
 
-<div class="container" id="empty-cart">
+<div id="empty-cart">
     <div class="flex flex-row flex-row-start flex-space-between flex-m-column-reverse">
         <div class="text-content">
-            <h1 class="lead">Jelenleg üres a kosarad!</h1>
+            <h1 class="lead mb-2">Jelenleg üres a kosarad!</h1>
             <h3 class="sub">Vásárolj Tőlünk valamit, és legyen szép napod!</h3>
         </div>
         <div class="image-content">

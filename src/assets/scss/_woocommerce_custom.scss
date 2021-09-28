@@ -82,7 +82,7 @@
 }
 
 //shipping
-#shipto-different-address-checkbox {
+#ship-to-different-address-checkbox {
     width: 20px !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -102,4 +102,20 @@
             margin-right: 2rem;
         }
     }
+}
+
+//order details
+.woocommerce .woocommerce-customer-details address {
+    p {
+        font-weight: 300;
+        padding-left: 0;
+        font-size: 14px;
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.woocommerce ul.order_details li {
+    margin-top: 1rem;
 }

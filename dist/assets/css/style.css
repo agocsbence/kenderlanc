@@ -188,7 +188,7 @@ table {
 .woocommerce-checkout table.cart img {
   width: 100px !important; }
 
-#shipto-different-address-checkbox {
+#ship-to-different-address-checkbox {
   width: 20px !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -204,6 +204,16 @@ table {
   @media screen and (min-width: 991px) {
     #empty-cart .text-content {
       margin-right: 2rem; } }
+
+.woocommerce .woocommerce-customer-details address p {
+  font-weight: 300;
+  padding-left: 0;
+  font-size: 14px; }
+  .woocommerce .woocommerce-customer-details address p:before {
+    display: none; }
+
+.woocommerce ul.order_details li {
+  margin-top: 1rem; }
 
 header {
   position: fixed;
