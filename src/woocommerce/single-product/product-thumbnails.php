@@ -23,7 +23,9 @@ if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
 }
 
 global $product;
+global $post;
 
+$short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 $attachment_ids = $product->get_gallery_image_ids();
 
 // if ( $attachment_ids && $product->get_image_id() ) {
@@ -62,7 +64,12 @@ $attachment_ids = $product->get_gallery_image_ids();
             <?php }
         ?>
 	</div>
+	<!-- price -->
 	<h3 class="mb-1 <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></h3>
+	<!-- short description -->
+	<div class="woocommerce-product-details__short-description">
+		<?php echo $short_description; // WPCS: XSS ok. ?>
+	</div>
 </div>
 
 <!-- Swiper JS -->
