@@ -11,7 +11,7 @@
         border-radius: 1rem;
         background: $green;
         aspect-ratio: 1;
-        display: flex;
+        display: flex !important;
         align-items: flex-end;
         justify-content: flex-start;
         padding: 2rem 1rem;
@@ -33,9 +33,9 @@
             }
         }
         &.bg--image {
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
         }
         &.bg--color {
             &.bg--color-green {
@@ -46,7 +46,8 @@
             }
         }
         &#grid-extra {
-            background: #fdf6e1;
+            background-color: #fdf6e1;
+            background-size: 60% !important;
             img {
                 position: absolute;
                 width: 70%;

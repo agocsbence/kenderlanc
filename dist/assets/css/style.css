@@ -540,7 +540,7 @@ form textarea {
     border-radius: 1rem;
     background: #b9d461;
     aspect-ratio: 1;
-    display: flex;
+    display: flex !important;
     align-items: flex-end;
     justify-content: flex-start;
     padding: 2rem 1rem;
@@ -557,15 +557,16 @@ form textarea {
     .grid--home-tiles .grid-tile.text-dark h2 {
       color: #172d22; }
     .grid--home-tiles .grid-tile.bg--image {
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover; }
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important; }
     .grid--home-tiles .grid-tile.bg--color.bg--color-green {
       background-color: #b9d461; }
     .grid--home-tiles .grid-tile.bg--color.bg--color-orange {
       background-color: #f4c560; }
     .grid--home-tiles .grid-tile#grid-extra {
-      background: #fdf6e1; }
+      background-color: #fdf6e1;
+      background-size: 60% !important; }
       .grid--home-tiles .grid-tile#grid-extra img {
         position: absolute;
         width: 70%;
