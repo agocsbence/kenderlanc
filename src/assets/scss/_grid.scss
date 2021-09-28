@@ -9,6 +9,9 @@
         @media screen and (min-width: $tablet) {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-areas: "menu logo logo logo logo logo logo logo logo search search search search search icons icons icons";
+            &.nav-header {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
         }
     }
     &.grid-2 {

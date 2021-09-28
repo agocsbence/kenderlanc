@@ -58,7 +58,9 @@ table {
     @media screen and (min-width: 991px) {
       .grid.header-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "menu logo logo logo logo logo logo logo logo search search search search search icons icons icons"; } }
+        grid-template-areas: "menu logo logo logo logo logo logo logo logo search search search search search icons icons icons"; }
+        .grid.header-grid.nav-header {
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
   .grid.grid-2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto; }
@@ -255,7 +257,9 @@ header {
     .header-grid .header-logo img {
       max-width: 5rem; }
   .header-grid #desktopMenuClose {
-    grid-area: menu; }
+    grid-area: menu;
+    align-self: start;
+    justify-self: center; }
   .header-grid .header-icons {
     grid-area: icons;
     display: flex;
