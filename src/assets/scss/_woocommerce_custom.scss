@@ -146,4 +146,6 @@
 .woocommerce-MyAccount-navigation,
 .woocommerce-MyAccount-content {
     flex: 1;
+    float: none !important;
+    width: auto !important;
 }
