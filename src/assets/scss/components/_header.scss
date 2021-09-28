@@ -50,8 +50,8 @@ header {
         @media screen and (min-width: $tablet) {
             align-self: start;
         }
-        input {
-            background: #d8d8d850;
+        .search-field input {
+            background: $grey;
             padding: .5rem 1rem;
             border-radius: 2rem;
             border: 0;
