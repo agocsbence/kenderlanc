@@ -766,6 +766,12 @@ p {
   line-height: 22px;
   font-weight: 700; }
 
+.single-text-content p {
+  font-weight: 300; }
+
+.single-text-content strong {
+  margin-top: 2rem; }
+
 p {
   margin-bottom: 15px; }
 
