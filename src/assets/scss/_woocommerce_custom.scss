@@ -5,3 +5,13 @@
     float: none;
     width: auto;
 }
+
+.woocommerce-message {
+    border-top: 2px solid $green1 !important;
+    background: $green !important;
+    color: $green-dark !important;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
