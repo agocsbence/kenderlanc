@@ -1,5 +1,7 @@
 #product-images-wrapper {
-    padding-right: 2rem;
+    @media screen and (min-width: $tablet) {
+        padding-right: 2rem;
+    }
 }
 
 .woocommerce div.product form.cart .reset_variations {
@@ -19,6 +21,7 @@
         text-align: center;
         margin: 1rem 0;
         display: inline-block;
+        margin-right: 0 !important;
     }
 }
 
@@ -63,4 +66,8 @@ input.qty {
     line-height: 35px !important;
     font-weight: 700 !important;
     color: $green-dark !important;
+}
+
+.woocommerce-variation-price {
+    text-align: right;
 }

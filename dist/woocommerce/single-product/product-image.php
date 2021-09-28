@@ -22,6 +22,6 @@ if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
 	return;
 }
 ?>
-<div class="grid grid-2" id="product-images-wrapper">
+<div class="gridd2" id="product-images-wrapper">
     <?php do_action( 'woocommerce_product_thumbnails' ); ?>
 </div>
