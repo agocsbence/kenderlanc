@@ -30,6 +30,10 @@
 }
 
 //cart
+.woocommerce a.remove {
+    color: $green-dark !important;
+}
+
 .woocommerce-cart-form {
     table {
         border: 0 !important;
@@ -40,8 +44,9 @@
     border-top: 2px solid $green-dark;
     padding-top: 3rem;
     font-weight: 700;
-    a {
-        font-size: 30px;
+    a,
+    span {
+        font-size: 20px;
     }
 }
 
