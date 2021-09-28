@@ -1077,16 +1077,16 @@ marquee img {
   color: #fff; }
 
 .mobile-only {
-  display: none; }
+  display: none !important; }
   @media screen and (max-width: 991px) {
     .mobile-only {
-      display: block; } }
+      display: block !important; } }
 
 .desktop-only {
-  display: block; }
+  display: block !important; }
   @media screen and (max-width: 991px) {
     .desktop-only {
-      display: none; } }
+      display: none !important; } }
 
 .text-right {
   text-align: right; }
