@@ -64,4 +64,9 @@
     &.flex-space-between {
         justify-content: space-between;
     }
+    &.flex-m-column {
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+        }
+    }
 }
