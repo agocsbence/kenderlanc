@@ -218,6 +218,10 @@ table {
   .woocommerce .woocommerce-customer-details address p:before {
     display: none; }
 
+.woocommerce .woocommerce-customer-details .woocommerce-customer-details--email,
+.woocommerce .woocommerce-customer-details .woocommerce-customer-details--phone {
+  padding-left: 0 !important; }
+
 .woocommerce ul.order_details li {
   margin-top: 1rem; }
 
