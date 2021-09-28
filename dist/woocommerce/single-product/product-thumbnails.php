@@ -49,6 +49,7 @@ $attachment_ids = $product->get_gallery_image_ids();
             <?php }
         ?>
 	</div>
+	<div class="swiper-pagination"></div>
 	<div class="swiper-button-next"></div>
 	<div class="swiper-button-prev"></div>
 </div>
@@ -82,6 +83,9 @@ $attachment_ids = $product->get_gallery_image_ids();
 		slidesPerView: 3,
 		freeMode: true,
 		watchSlidesProgress: true,
+		pagination: {
+        	el: ".swiper-pagination",
+        },
 	});
 	var swiper2 = new Swiper("#productSwiper", {
 		spaceBetween: 10,
