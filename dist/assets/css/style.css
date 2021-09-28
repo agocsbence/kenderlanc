@@ -361,9 +361,9 @@ footer {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 10px 0; }
+  padding: 0 10px; }
   #productThumbnailSwiper .swiper-wrapper {
-    height: 100%; }
+    height: 100px; }
   #productThumbnailSwiper .swiper-slide {
     width: 33%;
     height: 100%;
@@ -439,6 +439,9 @@ footer {
       background: #fff; }
     .lexikon-wrapper .lexikon .lexikon-article {
       margin-bottom: 2rem; }
+
+#product-images-wrapper {
+  padding-right: 2rem; }
 
 * {
   -webkit-font-smoothing: antialiased;
