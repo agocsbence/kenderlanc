@@ -769,8 +769,9 @@ p {
 .text-block p {
   font-weight: 300; }
 
-.text-block strong {
-  margin-top: 2rem; }
+.text-block h2 {
+  margin-top: 2rem;
+  margin-bottom: 0; }
 
 p {
   margin-bottom: 15px; }
