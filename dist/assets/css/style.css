@@ -128,7 +128,8 @@ table {
   flex-direction: row-reverse !important;
   justify-content: space-between !important;
   align-items: center !important;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 1rem 2rem !important; }
   .woocommerce-message:before {
     display: none; }
 
