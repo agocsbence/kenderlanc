@@ -89,3 +89,11 @@
     margin-right: 1rem !important;
     height: 20px !important;
 }
+
+//empty cart
+#empty-cart {
+    .text-content,
+    .image-content {
+        flex: 1;
+    }
+}
