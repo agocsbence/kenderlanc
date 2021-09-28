@@ -525,7 +525,7 @@ input.qty {
   color: #172d22 !important;
   border: 2px solid #172d22 !important;
   font-size: 13px !important;
-  padding: .4rem .8rem !important;
+  padding: .8rem !important;
   border-radius: 12px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
@@ -534,10 +534,14 @@ input.qty {
   display: inline-block !important;
   width: 60px !important; }
 
-.woocommerce-variation-add-to-cart {
+.woocommerce-variation-add-to-cart,
+.summary form.cart {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important; }
+
+.summary form.cart:before, .summary form.cart:after {
+  display: none; }
 
 .price {
   font-size: 28px !important;
