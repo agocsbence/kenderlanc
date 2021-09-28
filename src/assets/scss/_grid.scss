@@ -2,7 +2,7 @@
     color: #000;
     font-size: 20px;
     font-weight: bold;
-    display: grid;
+    display: grid !important;
     &.header-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "logo logo logo logo icons icons icons icons" "logo logo logo logo search search search search";
@@ -54,7 +54,7 @@
 }
 
 .flex {
-    display: flex;
+    display: flex !important;
     &.flex-row {
         flex-direction: row;
     }
