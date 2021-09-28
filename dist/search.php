@@ -10,23 +10,34 @@ get_header(); ?>
 </section>
 
 <section id="primary" class="content-area container">
-    <div id="content" class="site-content grid grid-4" role="main">
+    <div id="content" class="site-content" role="main">
 
     <?php if ( have_posts() ) : ?>
 
-        <?php /* Start the Loop */ ?>
-        <?php while ( have_posts() ) : the_post(); ?>
+        <div class="grid grid-4">
+            <?php /* Start the Loop */ ?>
+            <?php while ( have_posts() ) : the_post(); ?>
 
-            <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
-                <?php echo woocommerce_get_product_thumbnail(); ?>
-                <h2 class="product-name"><?php echo get_the_title(); ?></h2>
-            </a>
+                <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
+                    <?php echo woocommerce_get_product_thumbnail(); ?>
+                    <h2 class="product-name"><?php echo get_the_title(); ?></h2>
+                </a>
 
-        <?php endwhile; ?>
+            <?php endwhile; ?>
+        </div>
 
     <?php else : ?>
 
-        <h1>A keresés nem hozott eredményt :(</h1>
+        <div id="no-result">
+            <div class="flex flex-row flex-row-start flex-space-between flex-m-column">
+                <div class="text-content">
+                    <h1 class="lead mb-2">Nincs találat!</h1>
+                </div>
+                <div class="image-content">
+                    <img src="<?php bloginfo('template_url') ?>/assets/img/no-result.png" alt="Nincs eredmény">
+                </div>
+            </div>
+        </div>
 
     <?php endif; ?>
 
