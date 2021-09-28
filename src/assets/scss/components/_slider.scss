@@ -8,6 +8,12 @@
     }
 }
 
+.swiper-pagination-bullets {
+    @media screen and (min-width: $tablet) {
+        bottom: 20px;
+    }
+}
+
 .swiper-pagination-bullet {
     background: $white;
     border: 2px solid $green-dark;

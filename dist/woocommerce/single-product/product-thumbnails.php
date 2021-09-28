@@ -66,8 +66,6 @@ $attachment_ids = $product->get_gallery_image_ids();
         ?>
 	</div>
 </div>
-<!-- price -->
-<h3 class="mb-1 <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></h3>
 <!-- short description -->
 <div class="woocommerce-product-details__short-description">
 	<?php echo $short_description; // WPCS: XSS ok. ?>

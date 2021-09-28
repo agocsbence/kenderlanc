@@ -363,6 +363,10 @@ footer {
     width: 100%;
     height: auto; }
 
+@media screen and (min-width: 991px) {
+  .swiper-pagination-bullets {
+    bottom: 20px; } }
+
 .swiper-pagination-bullet {
   background: #fff;
   border: 2px solid #172d22;
@@ -478,6 +482,9 @@ footer {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1rem; } }
+
+.woocommerce-product-details__short-description {
+  grid-column: 1 / span 2; }
 
 .woocommerce div.product form.cart .reset_variations {
   display: none !important; }
