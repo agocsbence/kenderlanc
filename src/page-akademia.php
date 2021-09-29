@@ -40,47 +40,24 @@ get_header(); ?>
         
         if ( $loop->have_posts() ) :
             while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <div class="pindex">
-                    <h2>tagek:</h2>
-                    <?php
-                    $tags = get_tags();
-                    var_dump($tags);
-                    
-                    foreach($tags as $tag) { 
-                        var_dump($tag);
-                    } 
-                    ?>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h1><?php the_title(); ?></h1>
+                        <div class="accordion-arrow">
+                            <img src="<?php bloginfo('template_url') ?>/assets/img/icons/accordion.svg" alt="Megtekint">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="text-block">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
                 </div>
-            <?php endwhile;
-            if (  $loop->max_num_pages > 1 ) : ?>
-                <div id="nav-below" class="navigation">
-                    <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Previous', 'domain' ) ); ?></div>
-                    <div class="nav-next"><?php previous_posts_link( __( 'Next <span class="meta-nav">&rarr;</span>', 'domain' ) ); ?></div>
-                </div>
-            <?php endif;
+            <?php 
+            endwhile;
         endif;
         wp_reset_postdata();
-    ?>
-
-        <div class="accordion">
-            <div class="accordion-header">
-                <h1>Életvirág szappan</h1>
-                <div class="accordion-arrow">
-                    <img src="<?php bloginfo('template_url') ?>/assets/img/icons/accordion.svg" alt="Megtekint">
-                </div>
-            </div>
-            <div class="accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
-                <p><strong>vilhemp.com</strong></p>
-            </div>
-        </div>
+        ?>
 
         <!-- end of loop -->
 
