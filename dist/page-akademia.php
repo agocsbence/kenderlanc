@@ -34,28 +34,22 @@ get_header(); ?>
     <div class="accordion-wrapper">
 
         <!-- loop here -->
-        <h2>tagek:</h2>
         <?php
-        $tags = get_tags();
-        
-        foreach($tags as $tag) { 
-            var_dump($tag);
-        }
-        
-        echo "<hr>";
         
         $loop = new WP_Query( array( 'post_type' => 'akademia_cikkek', 'tag' => 'current', 'ignore_sticky_posts' => 1, 'paged' => $paged ) );
+        
         if ( $loop->have_posts() ) :
             while ( $loop->have_posts() ) : $loop->the_post(); ?>
                 <div class="pindex">
-                    <?php if ( has_post_thumbnail() ) { ?>
-                        <div class="pimage">
-                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                        </div>
-                    <?php } ?>
-                    <div class="ptitle">
-                        <h2><?php echo get_the_title(); ?></h2>
-                    </div>
+                    <h2>tagek:</h2>
+                    <?php
+                    $tags = get_tags();
+                    var_dump($tags);
+                    
+                    foreach($tags as $tag) { 
+                        var_dump($tag);
+                    } 
+                    ?>
                 </div>
             <?php endwhile;
             if (  $loop->max_num_pages > 1 ) : ?>
