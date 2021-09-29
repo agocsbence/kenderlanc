@@ -26,6 +26,26 @@ get_header(); ?>
                     <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
                         szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
                 </div>
+                <div class="lexikon-article">
+                    <h3>Áztatás (Soak)</h3>
+                    <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
+                        szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
+                </div>
+                <div class="lexikon-article">
+                    <h3>Áztatás (Soak)</h3>
+                    <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
+                        szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
+                </div>
+                <div class="lexikon-article">
+                    <h3>Áztatás (Soak)</h3>
+                    <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
+                        szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
+                </div>
+                <div class="lexikon-article">
+                    <h3>Áztatás (Soak)</h3>
+                    <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
+                        szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
+                </div>
             </div>
             <div class="letter">
                 <h2 id="b">B</h2>
