@@ -1,6 +1,34 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 
+// Function to change "posts" to "news" in the admin side menu
+function change_post_menu_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Lexikon';
+    $submenu['edit.php'][5][0] = 'Lexikon';
+    $submenu['edit.php'][10][0] = 'Új lexikon cikk';
+    $submenu['edit.php'][16][0] = 'Tags';
+    echo '';
+}
+add_action( 'admin_menu', 'change_post_menu_label' );
+// Function to change post object labels to "news"
+function change_post_object_label() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'Lexikon';
+    $labels->singular_name = 'Lexikon cikk';
+    $labels->add_new = 'Új lexikon cikk';
+    $labels->add_new_item = 'Új lexikon cikk';
+    $labels->edit_item = 'Lexikon cikk szerkesztése';
+    $labels->new_item = 'Lexikon cikk';
+    $labels->view_item = 'Megtekintés';
+    $labels->search_items = 'Lexikon keresés';
+    $labels->not_found = 'Nincs lexikon cikk';
+    $labels->not_found_in_trash = 'Nincs lexikon cikk a kukában';
+}
+add_action( 'init', 'change_post_object_label' );
+
 // REGISTER MENU AREAS
 function register_header_menu() {
     register_nav_menu('header-menu',__( 'Header Menu', 'kenderlanc' ));
