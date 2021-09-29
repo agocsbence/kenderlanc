@@ -16,30 +16,12 @@ get_header(); ?>
         <form action="">
             <div class="filter-content">
                 <?php 
-                foreach ($tags as $tag) {
-                    var_dump($tag); ?>
+                foreach ($tags as $tag) { ?>
                     <div class="filter">
-                        <label for="item-1"><?php echo $tag->name; ?></label>
-                        <input type="checkbox" name="item-1" id="" value="item-1">
+                        <label for="<?php echo $tag->slug; ?>"><?php echo $tag->name; ?></label>
+                        <input type="checkbox" name="<?php echo $tag->slug; ?>" id="" value="<?php echo $tag->slug; ?>">
                     </div>
                 <?php } ?>
-                
-                <div class="filter">
-                    <label for="item-1">Item 1</label>
-                    <input type="checkbox" name="item-1" id="" value="item-1">
-                </div>
-                <div class="filter">
-                    <label for="item-1">Item 1</label>
-                    <input type="checkbox" name="item-1" id="" value="item-1">
-                </div>
-                <div class="filter">
-                    <label for="item-1">Item 1</label>
-                    <input type="checkbox" name="item-1" id="" value="item-1">
-                </div>
-                <div class="filter">
-                    <label for="item-1">Item 1</label>
-                    <input type="checkbox" name="item-1" id="" value="item-1">
-                </div>
             </div>
         </form>
     </div>
@@ -51,8 +33,16 @@ get_header(); ?>
         $loop = new WP_Query( array( 'post_type' => 'akademia_cikkek' ) );
         
         if ( $loop->have_posts() ) :
-            while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <div class="accordion">
+            while ( $loop->have_posts() ) : $loop->the_post();
+            $id = get_the_ID();
+            $tags = wp_get_post_tags($id); ?>
+                <div class="accordion
+                    <?php
+                    echo 'akademia-id-'.$id.' ';
+                    foreach ( $tags as $tag ) {
+                        echo $tag->slug;
+                    } 
+                    ?>">
                     <div class="accordion-header">
                         <h1><?php the_title(); ?></h1>
                         <div class="accordion-arrow">
