@@ -26,7 +26,9 @@ get_header(); ?>
                 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
                     <div class="lexikon-article">
                         <h3><?php the_title(); ?></h3>
-                        <?php the_content(); ?>
+                        <div class="text-block">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 <?php endwhile; 
                 wp_reset_postdata();?>
@@ -39,7 +41,9 @@ get_header(); ?>
                 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
                     <div class="lexikon-article">
                         <h3><?php the_title(); ?></h3>
-                        <?php the_content(); ?>
+                        <div class="text-block">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 <?php endwhile; 
                 wp_reset_postdata();?>
@@ -52,7 +56,9 @@ get_header(); ?>
                 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
                     <div class="lexikon-article">
                         <h3><?php the_title(); ?></h3>
-                        <?php the_content(); ?>
+                        <div class="text-block">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 <?php endwhile; 
                 wp_reset_postdata();?>
@@ -65,7 +71,9 @@ get_header(); ?>
                 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
                     <div class="lexikon-article">
                         <h3><?php the_title(); ?></h3>
-                        <?php the_content(); ?>
+                        <div class="text-block">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 <?php endwhile; 
                 wp_reset_postdata();?>
@@ -78,7 +86,9 @@ get_header(); ?>
                 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
                     <div class="lexikon-article">
                         <h3><?php the_title(); ?></h3>
-                        <?php the_content(); ?>
+                        <div class="text-block">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 <?php endwhile; 
                 wp_reset_postdata();?>
@@ -91,7 +101,9 @@ get_header(); ?>
                 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
                     <div class="lexikon-article">
                         <h3><?php the_title(); ?></h3>
-                        <?php the_content(); ?>
+                        <div class="text-block">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 <?php endwhile; 
                 wp_reset_postdata();?>
