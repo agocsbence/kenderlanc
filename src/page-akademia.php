@@ -36,15 +36,10 @@ get_header(); ?>
         <!-- loop here -->
         <h2>tagek:</h2>
         <?php
-        $args = array(
-            'type' => 'akademia_cikkek',
-            'orderby' => 'name',
-            'order' => 'ASC'
-        );
-        $tags = get_tags($args);
+        $tags = get_tags();
         
         foreach($tags as $tag) { 
-            var_dump($tag->name);
+            var_dump($tag);
         }
         
         echo "<hr>";
