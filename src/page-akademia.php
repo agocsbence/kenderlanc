@@ -37,7 +37,7 @@ get_header(); ?>
             $id = get_the_ID();
             $tags = wp_get_post_tags($id);?>
                 <div class="accordion
-                    <?php
+                    <?php //add specified classes for filtering
                     echo 'akademia-id-'.$id.' ';
                     foreach ( $tags as $tag ) {
                         echo $tag->slug.' ';
