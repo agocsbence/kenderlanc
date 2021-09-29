@@ -21,42 +21,81 @@ get_header(); ?>
         <div class="lexikon">
             <div class="letter">
                 <h2 id="a">A</h2>
-                <div class="lexikon-article">
-                    <h3>Áztatás (Soak)</h3>
-                    <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
-                        szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
-                </div>
-                <div class="lexikon-article">
-                    <h3>Áztatás (Soak)</h3>
-                    <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
-                        szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
-                </div>
-                <div class="lexikon-article">
-                    <h3>Áztatás (Soak)</h3>
-                    <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
-                        szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
-                </div>
-                <div class="lexikon-article">
-                    <h3>Áztatás (Soak)</h3>
-                    <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
-                        szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
-                </div>
-                <div class="lexikon-article">
-                    <h3>Áztatás (Soak)</h3>
-                    <p>A kenderkóróknak – a víz hőmérsékletétől függően – 7–14 napon át víz alatt való tartása, hogy a szár külsején elhelyezkedő értékes rostanyag lelazuljon a kender belső fás szövetéről. A kenderáztatás mind álló-, mind folyóvízben
-                        szokásos, bár a nagyobb folyóvizekben való áztatást tiltották a hatóságok, mivel a kenderből kioldódó anyagok mérgezték a halállományt.</p>
-                </div>
+                
+                <?php $query = new WP_Query( 'cat=28' ); ?>
+                <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
+                    <div class="lexikon-article">
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_content(); ?>
+                    </div>
+                <?php endwhile; 
+                wp_reset_postdata();?>
+                <?php endif; ?>
             </div>
             <div class="letter">
                 <h2 id="b">B</h2>
-                <div class="lexikon-article">
-                    <h3>Bakol</h3>
-                    <p>Régies kifejezés. Kendert tilol, tör.</p>
-                </div>
-                <div class="lexikon-article">
-                    <h3>Bakóallya</h3>
-                    <p>Régies kifejezés. Az a csomó kender, amelyet egyszerre tesznek a törő alá</p>
-                </div>
+
+                <?php $query = new WP_Query( 'cat=29' ); ?>
+                <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
+                    <div class="lexikon-article">
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_content(); ?>
+                    </div>
+                <?php endwhile; 
+                wp_reset_postdata();?>
+                <?php endif; ?>
+            </div>
+            <div class="letter">
+                <h2 id="c">C</h2>
+                
+                <?php $query = new WP_Query( 'cat=30' ); ?>
+                <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
+                    <div class="lexikon-article">
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_content(); ?>
+                    </div>
+                <?php endwhile; 
+                wp_reset_postdata();?>
+                <?php endif; ?>
+            </div>
+            <div class="letter">
+                <h2 id="d">D</h2>
+                
+                <?php $query = new WP_Query( 'cat=31' ); ?>
+                <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
+                    <div class="lexikon-article">
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_content(); ?>
+                    </div>
+                <?php endwhile; 
+                wp_reset_postdata();?>
+                <?php endif; ?>
+            </div>
+            <div class="letter">
+                <h2 id="e">E</h2>
+                
+                <?php $query = new WP_Query( 'cat=32' ); ?>
+                <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
+                    <div class="lexikon-article">
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_content(); ?>
+                    </div>
+                <?php endwhile; 
+                wp_reset_postdata();?>
+                <?php endif; ?>
+            </div>
+            <div class="letter">
+                <h2 id="f">F</h2>
+                
+                <?php $query = new WP_Query( 'cat=33' ); ?>
+                <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>                
+                    <div class="lexikon-article">
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_content(); ?>
+                    </div>
+                <?php endwhile; 
+                wp_reset_postdata();?>
+                <?php endif; ?>
             </div>
         </div>
     </div>
