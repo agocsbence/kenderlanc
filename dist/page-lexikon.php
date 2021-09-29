@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <div class="container">
-    <h1 class="mb-2">Lexikon</h1>
+    <h1 class="mb-2">Ipari Kender Lexikon</h1>
     <div class="lexikon-wrapper">
         <div class="lexikon-alphabet">
             <div class="alphabet-letters">
