@@ -9,13 +9,14 @@
         <div class="text-block form-block">
             <?php
             $id = get_the_ID();
-            if ($id == 41) {
-                the_field('jobb_hasab');
-            } else {
+            if ($id == 41) { ?>
+                <div class="mb-6">
+                    <?php the_field('jobb_hasab'); ?>
+                </div>
+            <?php } else {
                 $form = get_field('form');
                 echo do_shortcode($form);
-            }
-            ?>
+            } ?>
         </div>
     </div>
 </div>
