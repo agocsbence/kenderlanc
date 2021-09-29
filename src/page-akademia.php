@@ -8,7 +8,7 @@ get_header(); ?>
     <h1 class="mb-1">Akadémia</h1>
     <div class="filter-wrapper" id="productFilter">
         <div class="filter-header" id="toggleFilter">
-            <img src="./assets/img/icons/filter.svg" alt="Szűrés">
+            <img src="<?php bloginfo('template_url') ?>/assets/img/icons/filter.svg" alt="Szűrés">
         </div>
         <form action="">
             <div class="filter-content">
@@ -36,7 +36,7 @@ get_header(); ?>
             <div class="accordion-header">
                 <h1>Életvirág szappan</h1>
                 <div class="accordion-arrow">
-                    <img src="./assets/img/icons/accordion.svg" alt="Megtekint">
+                    <img src="<?php bloginfo('template_url') ?>/assets/img/icons/accordion.svg" alt="Megtekint">
                 </div>
             </div>
             <div class="accordion-content">
@@ -55,7 +55,7 @@ get_header(); ?>
             <div class="accordion-header">
                 <h1>Életvirág szappan</h1>
                 <div class="accordion-arrow">
-                    <img src="./assets/img/icons/accordion.svg" alt="Megtekint">
+                    <img src="<?php bloginfo('template_url') ?>/assets/img/icons/accordion.svg" alt="Megtekint">
                 </div>
             </div>
             <div class="accordion-content">
@@ -74,7 +74,7 @@ get_header(); ?>
             <div class="accordion-header">
                 <h1>Életvirág szappan</h1>
                 <div class="accordion-arrow">
-                    <img src="./assets/img/icons/accordion.svg" alt="Megtekint">
+                    <img src="<?php bloginfo('template_url') ?>/assets/img/icons/accordion.svg" alt="Megtekint">
                 </div>
             </div>
             <div class="accordion-content">
