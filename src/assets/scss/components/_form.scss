@@ -41,11 +41,14 @@ form {
                 color: $green-dark;
             }
             input {
-                width: 11px;
+                width: 11px !important;
                 height: 11px;
                 position: relative;
                 appearance: none;
                 -webkit-appearance: none;
+                border: 0 !important;
+                margin-bottom: 0 !important;
+                padding-right: 0 !important;
                 &:before {
                     content: '';
                     position: absolute;

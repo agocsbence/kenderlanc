@@ -459,11 +459,14 @@ form input[type="submit"] {
         font-weight: 700;
         color: #172d22; }
       .filter-wrapper .filter-content .filter input {
-        width: 11px;
+        width: 11px !important;
         height: 11px;
         position: relative;
         appearance: none;
-        -webkit-appearance: none; }
+        -webkit-appearance: none;
+        border: 0 !important;
+        margin-bottom: 0 !important;
+        padding-right: 0 !important; }
         .filter-wrapper .filter-content .filter input:before {
           content: '';
           position: absolute;
