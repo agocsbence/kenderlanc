@@ -10,8 +10,20 @@ get_header(); ?>
         <div class="filter-header" id="toggleFilter">
             <img src="<?php bloginfo('template_url') ?>/assets/img/icons/filter.svg" alt="Szűrés">
         </div>
+
+        <?php $tags = get_tags(array( 'hide_empty' => false ));?>
+
         <form action="">
             <div class="filter-content">
+                <?php 
+                foreach ($tags as $tag) {
+                    var_dump($tag); ?>
+                    <div class="filter">
+                        <label for="item-1"><?php echo $tag->name; ?></label>
+                        <input type="checkbox" name="item-1" id="" value="item-1">
+                    </div>
+                <?php } ?>
+                
                 <div class="filter">
                     <label for="item-1">Item 1</label>
                     <input type="checkbox" name="item-1" id="" value="item-1">
@@ -32,17 +44,6 @@ get_header(); ?>
         </form>
     </div>
     <div class="accordion-wrapper">
-
-    <?php 
-    $tags = get_tags(array(
-    'hide_empty' => false
-    ));
-    echo '<ul>';
-    foreach ($tags as $tag) {
-    echo '<li>' . $tag->name . '</li>';
-    }
-    echo '</ul>';
-    ?>
 
         <!-- loop here -->
         <?php
