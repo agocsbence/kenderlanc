@@ -37,7 +37,7 @@ get_header(); ?>
         <h2>tagek:</h2>
         <?php
         $args = array(
-            'type' => get_post_type(),
+            'type' => 'akademia_cikkek',
             'orderby' => 'name',
             'order' => 'ASC'
         );
