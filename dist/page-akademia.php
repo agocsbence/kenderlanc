@@ -36,7 +36,7 @@ get_header(); ?>
         <!-- loop here -->
         <?php
         
-        $loop = new WP_Query( array( 'post_type' => 'akademia_cikkek', 'tag' => 'current', 'ignore_sticky_posts' => 1, 'paged' => $paged ) );
+        $loop = new WP_Query( array( 'post_type' => 'akademia_cikkek' ) );
         
         if ( $loop->have_posts() ) :
             while ( $loop->have_posts() ) : $loop->the_post(); ?>
