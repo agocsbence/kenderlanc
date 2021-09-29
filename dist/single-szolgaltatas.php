@@ -7,8 +7,15 @@
             <?php the_content(); ?>
         </div>
         <div class="text-block form-block">
-            <?php $form = get_field('form'); ?>
-            <?php echo do_shortcode($form); ?>
+            <?php
+            $id = get_the_ID();
+            if ($id == 41) {
+                the_field('jobb_hasab');
+            } else {
+                $form = get_field('form');
+                echo do_shortcode($form);
+            }
+            ?>
         </div>
     </div>
 </div>
