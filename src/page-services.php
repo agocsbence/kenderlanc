@@ -13,16 +13,16 @@ get_header(); ?>
         <a href="<?php echo get_home_url(); ?>/szolgaltatas/jogsegely" id="jogsegely" class="grid-tile bg--color bg--color-red">
             <h2>Jogsegély</h2>
         </a>
-        <a href="/termekek" class="grid-tile bg--color bg--color-green">
+        <a href="<?php echo get_home_url(); ?>/szolgaltatas/magtol-a-termekig" class="grid-tile bg--color bg--color-green">
             <h2>Magtól a termékig</h2>
         </a>
-        <a href="" class="grid-tile bg--color bg--color-green1">
+        <a href="<?php echo get_home_url(); ?>/szolgaltatas/oktatas" class="grid-tile bg--color bg--color-green1">
             <h2>Oktatás</h2>
         </a>
-        <a href="" class="grid-tile bg--color bg--color-orange">
+        <a href="<?php echo get_home_url(); ?>/szolgaltatas/forgalmazas" class="grid-tile bg--color bg--color-orange">
             <h2>Forgalmazás</h2>
         </a>
-        <a href="" class="grid-tile bg--color bg--color-green">
+        <a href="<?php echo get_home_url(); ?>/szolgaltatas/rendezveny" class="grid-tile bg--color bg--color-green">
             <h2>Rendezvény</h2>
         </a>
     </div>
