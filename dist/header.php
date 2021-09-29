@@ -66,8 +66,8 @@
         </div>
         <nav>
             <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item">Termékek</a>
-            <a href="" class="nav-item">Szolgáltatások</a>
-            <a href="" class="nav-item">Magazin</a>
+            <a href="<?php echo get_home_url(); ?>/szolgaltatasok" class="nav-item">Szolgáltatások</a>
+            <a href="<?php echo get_home_url(); ?>/magazin" class="nav-item">Magazin</a>
         </nav>
         <div class="sub-menu">
             <a href="">Partnerek</a>
