@@ -11,11 +11,11 @@ get_header(); ?>
             <div class="alphabet-letters">
                 <a href="#a">A</a>
                 <a href="#b">B</a>
-                <a href="">C</a>
-                <a href="">D</a>
-                <a href="">E</a>
-                <a href="">F</a>
-                <a href="">G</a>
+                <a href="#c">C</a>
+                <a href="#d">D</a>
+                <a href="#e">E</a>
+                <a href="#f">F</a>
+                <a href="#g">G</a>
             </div>
         </div>
         <div class="lexikon">
