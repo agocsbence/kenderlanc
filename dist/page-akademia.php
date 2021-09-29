@@ -33,6 +33,17 @@ get_header(); ?>
     </div>
     <div class="accordion-wrapper">
 
+    <?php 
+    $tags = get_tags(array(
+    'hide_empty' => false
+    ));
+    echo '<ul>';
+    foreach ($tags as $tag) {
+    echo '<li>' . $tag->name . '</li>';
+    }
+    echo '</ul>';
+    ?>
+
         <!-- loop here -->
         <?php
         
@@ -60,45 +71,6 @@ get_header(); ?>
         ?>
 
         <!-- end of loop -->
-
-        <div class="accordion">
-            <div class="accordion-header">
-                <h1>Életvirág szappan</h1>
-                <div class="accordion-arrow">
-                    <img src="<?php bloginfo('template_url') ?>/assets/img/icons/accordion.svg" alt="Megtekint">
-                </div>
-            </div>
-            <div class="accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
-                <p><strong>vilhemp.com</strong></p>
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion-header">
-                <h1>Életvirág szappan</h1>
-                <div class="accordion-arrow">
-                    <img src="<?php bloginfo('template_url') ?>/assets/img/icons/accordion.svg" alt="Megtekint">
-                </div>
-            </div>
-            <div class="accordion-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nobis excepturi, et beatae omnis, eligendi aliquid, neque obcaecati aliquam est blanditiis molestiae atque nihil quos quod error quisquam voluptas eius nam!</p>
-                <p><strong>vilhemp.com</strong></p>
-            </div>
-        </div>
     </div>
 </section>
 

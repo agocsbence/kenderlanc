@@ -489,6 +489,9 @@ form input[type="submit"] {
   .filter-wrapper.opened {
     padding: 1rem;
     display: block; }
+    @media screen and (min-width: 991px) {
+      .filter-wrapper.opened {
+        max-width: 20rem; } }
     .filter-wrapper.opened .filter-content {
       display: block; }
 
