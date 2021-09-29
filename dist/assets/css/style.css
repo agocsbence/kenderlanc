@@ -634,6 +634,8 @@ form input[type="submit"] {
       background: #fff; }
     .lexikon-wrapper .lexikon .lexikon-article {
       margin-bottom: 2rem; }
+      .lexikon-wrapper .lexikon .lexikon-article p {
+        font-weight: 300 !important; }
 
 @media screen and (min-width: 991px) {
   #product-images-wrapper {
