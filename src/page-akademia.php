@@ -35,7 +35,8 @@ get_header(); ?>
         if ( $loop->have_posts() ) :
             while ( $loop->have_posts() ) : $loop->the_post();
             $id = get_the_ID();
-            $tags = wp_get_post_tags($id); ?>
+            $tags = wp_get_post_tags($id);
+            var_dump($tags); ?>
                 <div class="accordion
                     <?php
                     echo 'akademia-id-'.$id.' ';
