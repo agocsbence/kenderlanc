@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.2.1">
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.2.2">
 </head>
 
 <body <?php body_class(); ?>>
@@ -40,14 +40,14 @@
         </div>
         <div class="header-icons">
             <a href="<?php echo get_home_url(); ?>/fiokom" class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/profile.svg" alt="Profil"></a>
-            <a href="<?php echo get_home_url(); ?>/kosar" class="header-icon">
+            <a href="<?php echo get_home_url(); ?>/kosar" class="header-icon rel">
                 <img src="<?php bloginfo('template_url') ?>/assets/img/icons/cart.svg" alt="Kosár">
-                <span>
+                <div class="cart-counter">
                     <?php
                         global $woocommerce;
-                        echo $woocommerce->cart->cart_contents_count;
+                        echo '<span>'.$woocommerce->cart->cart_contents_count.'</span>';
                     ?>
-                </span>
+                </div>
             </a>
             <div class="header-icon hide"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/heart.svg" alt="Kedvencek"></div>
             <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü"></div>

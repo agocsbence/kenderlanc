@@ -295,6 +295,19 @@ header {
         align-self: start; } }
     .header-grid .header-icons .header-icon {
       margin-left: 1rem; }
+      .header-grid .header-icons .header-icon .cart-counter {
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        font-size: 12px;
+        background: #fff;
+        border: 2px solid #172d22;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
   .header-grid .header-menu {
     grid-area: menu;
     justify-self: end; }
@@ -1101,6 +1114,9 @@ marquee img {
 
 .text-center {
   text-align: center; }
+
+.rel {
+  position: relative; }
 
 .container {
   max-width: 90%;

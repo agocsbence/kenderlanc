@@ -38,6 +38,20 @@ header {
         }
         .header-icon {
             margin-left: 1rem;
+            .cart-counter {
+                position: absolute;
+                bottom: 0;
+                left: -10px;
+                font-size: 12px;
+                background: $white;
+                border: 2px solid $green-dark;
+                border-radius: 50%;
+                width: 14px;
+                height: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
     .header-menu {
