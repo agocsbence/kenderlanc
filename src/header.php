@@ -42,14 +42,14 @@
             <a href="<?php echo get_home_url(); ?>/fiokom" class="header-icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/profile.svg" alt="Profil"></a>
             <a href="<?php echo get_home_url(); ?>/kosar" class="header-icon rel">
                 <img src="<?php bloginfo('template_url') ?>/assets/img/icons/cart.svg" alt="Kosár">
-                <div class="cart-counter">
-                    <?php
-                        global $woocommerce;
-                        if($woocommerce->cart->cart_contents_count > 0) {
-                            echo '<span>'.$woocommerce->cart->cart_contents_count.'</span>';
-                        }
-                    ?>
-                </div>
+                <?php
+                    global $woocommerce;
+                    if($woocommerce->cart->cart_contents_count > 0) { ?>
+                        <div class="cart-counter">
+                            <span><?php echo $woocommerce->cart->cart_contents_count; ?></span>
+                        </div>
+                    <?php }
+                ?>
             </a>
             <div class="header-icon hide"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/heart.svg" alt="Kedvencek"></div>
             <div id="mobileMenuToggler" class="header-icon mobile-only menu-toggler"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/menu.svg" alt="Menü"></div>
