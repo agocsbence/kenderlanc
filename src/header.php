@@ -45,7 +45,9 @@
                 <div class="cart-counter">
                     <?php
                         global $woocommerce;
-                        echo '<span>'.$woocommerce->cart->cart_contents_count.'</span>';
+                        if($woocommerce->cart->cart_contents_count > 0) {
+                            echo '<span>'.$woocommerce->cart->cart_contents_count.'</span>';
+                        }
                     ?>
                 </div>
             </a>
