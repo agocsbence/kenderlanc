@@ -14,22 +14,22 @@ get_header();
 	<div class="container">
 		<h1 class="mb-2">Magyar ipari kender a hétköznapokra.</h1>
 		<div class="grid grid--home-tiles">
-			<a href="" class="grid-tile big-tile title-top bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/szolgaltatasok.png');">
+			<a href="<?php echo get_home_url(); ?>/szolgaltatasok" class="grid-tile big-tile title-top bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/szolgaltatasok.png');">
 				<h2>Szolgáltatások</h2>
 			</a>
-			<a href="" class="grid-tile bg--color bg--color-orange">
+			<a href="<?php echo get_home_url(); ?>/akademia" class="grid-tile bg--color bg--color-orange">
 				<h2>Tudástár</h2>
 			</a>
-			<a href="/termekek" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/nepszeru_termekek.png');">
+			<a href="<?php echo get_home_url(); ?>/termekek" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/nepszeru_termekek.png');">
 				<h2>Termékek</h2>
 			</a>
 			<a href="" id="grid-extra" class="grid-tile big-tile bg--image text-dark mobile-only" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/extra_tartalmak.png');">
 				<h2>Extra tartalmak</h2>
 			</a>
-			<a href="" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/partnereink.png');">
+			<a href="<?php echo get_home_url(); ?>/" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/partnereink.png');">
 				<h2>Partnereink</h2>
 			</a>
-			<a href="" class="grid-tile bg--color bg--color-green">
+			<a href="<?php echo get_home_url(); ?>/lexikon" class="grid-tile bg--color bg--color-green">
 				<h2>Lexikon</h2>
 			</a>
 		</div>
