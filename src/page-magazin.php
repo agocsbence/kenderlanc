@@ -10,14 +10,14 @@ get_header(); ?>
         <a href="" class="grid-tile big-tile title-top bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/featured.png');">
             <h2>Kiemelt cikk</h2>
         </a>
-        <a href="<?php echo get_home_url(); ?>/akademia" class="grid-tile bg--color bg--color-green1">
-            <h2>Akadémia</h2>
+        <a href="<?php echo get_home_url(); ?>/tudastar" class="grid-tile bg--color bg--color-green1">
+            <h2>Tudástár</h2>
         </a>
         <a href="<?php echo get_home_url(); ?>/lexikon" class="grid-tile bg--color bg--color-orange">
             <h2>Ipari Kender Lexikon</h2>
         </a>
         <a href="<?php echo get_home_url(); ?>" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/kender.png');">
-            <h2>Kenderlánc</h2>
+            <h2>Cikkek</h2>
         </a>
     </div>
 </div>
