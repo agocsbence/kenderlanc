@@ -274,7 +274,7 @@ table {
 .woocommerce .woocommerce-breadcrumb {
   margin: 0 auto !important;
   max-width: 90%;
-  margin-bottom: 2rem; }
+  padding-bottom: 2rem; }
 
 header {
   top: 0;

@@ -23,7 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! empty( $breadcrumb ) ) {
 
 	echo $wrap_before;
-	echo '<a href=""> / Termékek /</a>';
 
 	foreach ( $breadcrumb as $key => $crumb ) {
 
