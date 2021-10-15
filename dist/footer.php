@@ -16,11 +16,11 @@
                     <div class="footer-newsletter">
                         <label for="email">Iratkozz fel hírlevelünkre:</label>
                         <input type="email" placeholder="E-mail cím" class="mt-1 mb-2">
-                        <span class="">2021 &copy; Kenderlánc</span>
-                    </div>
-                    <div class="footer-menu flex flex-row flex-space-between mt-2">
-                        <a href="">Adatvédelmi nyilatkozat</a>
-                        <a href="">Cookie szabályzat</a>
+                        <div class="footer-menu flex flex-row flex-space-between mt-2">
+                            <span class="">2021 &copy; Kenderlánc</span>
+                            <a href="">Adatvédelmi nyilatkozat</a>
+                            <a href="">Cookie szabályzat</a>
+                        </div>
                     </div>
                 </div>
             </div>

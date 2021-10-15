@@ -30,6 +30,10 @@
 
 <body <?php body_class(); ?>>
 
+<style>
+    #wpadminbar {display: none;}
+</style>
+
     <header class="grid header-grid mb-3" id="header">
         <div class="header-logo">
             <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/logo.svg" alt="Kenderlánc"></a>
