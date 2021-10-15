@@ -23,13 +23,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! empty( $breadcrumb ) ) {
 
 	echo $wrap_before;
+	echo '<a href=""> / Termékek /</a>';
 
 	foreach ( $breadcrumb as $key => $crumb ) {
 
 		echo $before;
 
 		if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
-			echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>'.'<a href=""> / Termékek</a>';
+			echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
 		} else {
 			echo esc_html( $crumb[0] );
 		}
