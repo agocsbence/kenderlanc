@@ -271,6 +271,11 @@ table {
 .product-image {
   border-radius: 1rem; }
 
+.woocommerce .woocommerce-breadcrumb {
+  margin: 0 auto !important;
+  max-width: 90%;
+  margin-bottom: 2rem; }
+
 header {
   top: 0;
   left: 0;
