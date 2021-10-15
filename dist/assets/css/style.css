@@ -269,9 +269,6 @@ header {
   z-index: 998;
   transition: all .6s ease; }
 
-#page-content-wrapper {
-  padding-top: 9rem; }
-
 .header-grid {
   padding: 1rem; }
   .header-grid .header-logo {
