@@ -66,10 +66,6 @@ $attachment_ids = $product->get_gallery_image_ids();
         ?>
 	</div>
 </div>
-<!-- short description -->
-<div class="woocommerce-product-details__short-description">
-	<?php echo $short_description; // WPCS: XSS ok. ?>
-</div>
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
