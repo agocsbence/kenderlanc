@@ -276,6 +276,9 @@ table {
   max-width: 90%;
   padding-bottom: 2rem; }
 
+mark {
+  background: none !important; }
+
 header {
   top: 0;
   left: 0;

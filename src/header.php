@@ -80,8 +80,8 @@
             <a href="<?php echo get_home_url(); ?>/magazin" class="nav-item">Magazin</a>
         </nav>
         <div class="sub-menu">
-            <a href="">Partnerek</a>
-            <a href="">Rólunk</a>
+            <a href="<?php echo get_home_url(); ?>/partnerek">Partnerek</a>
+            <a href="<?php echo get_home_url(); ?>/rolunk">Rólunk</a>
             <a href="<?php echo get_home_url(); ?>/kapcsolat">Kapcsolat</a>
         </div>
     </div>

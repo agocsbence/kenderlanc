@@ -24,7 +24,6 @@ if ( ! empty( $breadcrumb ) ) {
 
 	if( is_product_category() || is_product_tag() || is_product() ) {
         $shop_page_id = 8;
-		var_dump($shop_page_id);
         $shop_home_arr = array( get_the_title($shop_page_id), get_permalink($shop_page_id));
 
         // insert to breadcrumbs array on second position
