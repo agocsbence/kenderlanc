@@ -1,11 +1,11 @@
 <?php
 
-/* Template Name: Akadémia */
+/* Template Name: Tudástár */
 
 get_header(); ?>
 
 <section class="container py-3">
-    <h1 class="mb-1">Akadémia</h1>
+    <h1 class="mb-1"><?php the_title(); ?></h1>
     <div class="filter-wrapper mb-2" id="productFilter">
         <div class="filter-header" id="toggleFilter">
             <img src="<?php bloginfo('template_url') ?>/assets/img/icons/filter.svg" alt="Szűrés">

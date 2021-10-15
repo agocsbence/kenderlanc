@@ -17,7 +17,7 @@ get_header();
                 global $product; ?>
                 
                 <a href="<?php echo get_permalink(); ?>" class="product-tile">
-                    <img src="<?php echo woocommerce_get_product_thumbnail(); ?>" alt="Termék neve">
+                    <img src="<?php echo woocommerce_get_product_thumbnail(); ?>" alt="Termék neve" class="product-image">
                     <h2 class="product-name"><?php echo get_the_title(); ?></h2>
                     <p class="product-price"><?php $product->get_price(); ?></p>
                 </a>

@@ -43,7 +43,7 @@ $attachment_ids = $product->get_gallery_image_ids();
                 ?>
                 <div class="swiper-slide">
                     <a class="" data-fancybox="gallery" href="<?php echo $image_url; ?>" style="background: url(<?php echo $image_url; ?>) center no-repeat;background-size:cover;">
-                        <img src="<?php echo $image_url; ?>" alt="gallery">
+                        <img src="<?php echo $image_url; ?>" alt="gallery" class="product-image">
                     </a>
                 </div>
             <?php }
@@ -60,7 +60,7 @@ $attachment_ids = $product->get_gallery_image_ids();
                 $image_url = wp_get_attachment_url($attachment_id);
                 ?>
                 <div class="swiper-slide thumbnail-slide">
-                    <img src="<?php echo $image_url; ?>" alt="gallery">
+                    <img src="<?php echo $image_url; ?>" alt="gallery" class="product-image">
                 </div>
             <?php }
         ?>

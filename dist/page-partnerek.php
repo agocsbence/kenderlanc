@@ -45,8 +45,10 @@ get_header(); ?>
         <!-- end of loop -->
     </div>
 </section>
-<div class="my-4 text-center partnerek-logo container">
-    <img src="<?php bloginfo('template_url') ?>/assets/img/partnerek.png" alt="Kenderlánc partnerek">
+<div class="container">
+    <div class="my-4 text-center partnerek-logo">
+        <img src="<?php bloginfo('template_url') ?>/assets/img/partnerek.png" alt="Kenderlánc partnerek">
+    </div>
 </div>
 <script src="<?php bloginfo('template_url') ?>/assets/js/accordion.js"></script>
 

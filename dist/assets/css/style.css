@@ -261,6 +261,10 @@ table {
   font-size: 16px;
   margin-bottom: 2rem; }
 
+.woocommerce ul.products li.product a img,
+.product-image {
+  border-radius: 30px; }
+
 header {
   top: 0;
   left: 0;
@@ -268,6 +272,9 @@ header {
   background: #fff;
   z-index: 998;
   transition: all .6s ease; }
+
+#page-content-wrapper {
+  min-height: 60vh; }
 
 .header-grid {
   padding: 1rem; }
