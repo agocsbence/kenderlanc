@@ -4,8 +4,8 @@
 
 get_header(); ?>
 
-<section class="container py-3">
-    <h1 class="mb-1"><?php the_title(); ?></h1>
+<section class="container py-3 m-py-1">
+    <h1 class="mb-3"><?php the_title(); ?></h1>
     <div class="accordion-wrapper" id="partnerek-accordion">
 
         <!-- loop here -->
@@ -45,7 +45,9 @@ get_header(); ?>
         <!-- end of loop -->
     </div>
 </section>
-
+<div class="my-4 text-center partnerek-logo">
+    <img src="<?php bloginfo('template_url') ?>/assets/img/partnerek.png" alt="Kenderlánc partnerek">
+</div>
 <script src="<?php bloginfo('template_url') ?>/assets/js/accordion.js"></script>
 
 <?php get_footer();

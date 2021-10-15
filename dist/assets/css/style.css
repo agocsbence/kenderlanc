@@ -924,6 +924,10 @@ marquee img {
 .py-6 {
   padding: 6rem 0; }
 
+@media screen and (max-width: 991px) {
+  .m-py-1 {
+    padding: 1rem 0 !important; } }
+
 .m-0 {
   margin: 0; }
 
