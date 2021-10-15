@@ -23,8 +23,8 @@ get_header();
 			<a href="<?php echo get_home_url(); ?>/szolgaltatasok" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/szolgaltatasok.png');">
 				<h2>Szolgáltatások</h2>
 			</a>
-			<a href="" id="grid-extra" class="grid-tile big-tile bg--image text-dark mobile-only" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/extra_tartalmak.png');">
-				<h2>Extra tartalmak</h2>
+			<a href="<?php echo get_home_url(); ?>/magazin" id="grid-extra" class="grid-tile big-tile bg--color-green1 mobile-only">
+				<h2>Magazin</h2>
 			</a>
 			<a href="<?php echo get_home_url(); ?>/partnerek" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/partnereink.png');">
 				<h2>Partnereink</h2>

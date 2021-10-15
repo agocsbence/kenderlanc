@@ -52,6 +52,15 @@ table {
   font-size: 20px;
   font-weight: bold;
   display: grid !important; }
+  .grid > * {
+    background: orange;
+    width: 100%; }
+  .grid > [style^='--aspect-ratio']::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: calc(100% / (var(--aspect-ratio))); }
   .grid.header-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "logo logo logo logo icons icons icons icons" "logo logo logo logo search search search search"; }
@@ -594,6 +603,12 @@ form input[type="submit"] {
     justify-content: flex-start;
     padding: 2rem 1rem;
     position: relative; }
+    .grid--home-tiles .grid-tile:before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 0;
+      padding-bottom: 100%; }
     .grid--home-tiles .grid-tile h2 {
       font-size: 20px;
       line-height: 26px;
