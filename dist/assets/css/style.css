@@ -263,7 +263,7 @@ table {
 
 .woocommerce ul.products li.product a img,
 .product-image {
-  border-radius: 30px; }
+  border-radius: 1rem; }
 
 header {
   top: 0;
