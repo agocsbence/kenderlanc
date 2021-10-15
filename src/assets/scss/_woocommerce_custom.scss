@@ -176,3 +176,10 @@
 .product-image {
     border-radius: 1rem;
 }
+
+//breadcrumbs
+.woocommerce .woocommerce-breadcrumb {
+    margin: 0 auto !important;
+    max-width: 90%;
+    margin-bottom: 2rem;
+}
