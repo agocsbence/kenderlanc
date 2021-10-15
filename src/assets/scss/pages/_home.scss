@@ -10,17 +10,26 @@
     .grid-tile {
         border-radius: 1rem;
         background: $green;
-        aspect-ratio: 1;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
         position: relative;
         &:before {
             content: "";
             display: inline-block;
             width: 1px;
             height: 0;
-            padding-bottom: 100%;
+            padding-top: 100%;
+        }
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            display: grid;
+            justify-items: start;
+            align-items: end;
+            .content-inside {
+                padding: 2rem 1rem;
+            }
         }
         h2 {
             font-size: 20px;

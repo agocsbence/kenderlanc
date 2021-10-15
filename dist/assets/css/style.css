@@ -594,17 +594,24 @@ form input[type="submit"] {
   .grid--home-tiles .grid-tile {
     border-radius: 1rem;
     background: #b9d461;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
     position: relative; }
     .grid--home-tiles .grid-tile:before {
       content: "";
       display: inline-block;
       width: 1px;
       height: 0;
-      padding-bottom: 100%; }
+      padding-top: 100%; }
+    .grid--home-tiles .grid-tile .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      display: grid;
+      justify-items: start;
+      align-items: end; }
+      .grid--home-tiles .grid-tile .content .content-inside {
+        padding: 2rem 1rem; }
     .grid--home-tiles .grid-tile h2 {
       font-size: 20px;
       line-height: 26px;
