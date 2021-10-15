@@ -52,9 +52,6 @@ table {
   font-size: 20px;
   font-weight: bold;
   display: grid !important; }
-  .grid > * {
-    background: orange;
-    width: 100%; }
   .grid > [style^='--aspect-ratio']::before {
     content: "";
     display: inline-block;
@@ -601,7 +598,6 @@ form input[type="submit"] {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    padding: 2rem 1rem;
     position: relative; }
     .grid--home-tiles .grid-tile:before {
       content: "";
