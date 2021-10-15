@@ -32,7 +32,7 @@ if ( $product->is_in_stock() ) : ?>
 	<div>
 		<!-- short description -->
 		<div class="woocommerce-product-details__short-description">
-			<?php echo $short_description; // WPCS: XSS ok. ?>
+			<?php the_content(); // WPCS: XSS ok. ?>
 		</div>
 		<!-- price -->
 		<h3 class="mb-1 <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></h3>
