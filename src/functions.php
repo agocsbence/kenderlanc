@@ -83,7 +83,7 @@ function order_search_by_posttype($orderby){
         global $wpdb;
         $orderby =
             "
-            CASE WHEN {$wpdb->prefix}posts.post_type = 'products' THEN '1' 
+            CASE WHEN {$wpdb->prefix}posts.post_type = 'product' THEN '1' 
                  WHEN {$wpdb->prefix}posts.post_type = 'kenderlanc_cikkek' THEN '2' 
                  WHEN {$wpdb->prefix}posts.post_type = 'post' THEN '3' 
                  WHEN {$wpdb->prefix}posts.post_type = 'akademia_cikek' THEN '4' 
