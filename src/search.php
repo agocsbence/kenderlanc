@@ -14,13 +14,17 @@ get_header(); ?>
 
     <?php if ( have_posts() ) : ?>
 
-        <div class="grid grid-4">
+        <div class="grid grid--home-tiles">
             <?php /* Start the Loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
                     <?php echo woocommerce_get_product_thumbnail(); ?>
                     <h2 class="product-name"><?php echo get_the_title(); ?></h2>
+                    <?php
+                    $post_type = get_post_type( $post->ID );
+                    echo $post_type;
+                    ?>
                 </a>
 
             <?php endwhile; ?>
