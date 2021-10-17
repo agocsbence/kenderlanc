@@ -279,6 +279,16 @@ table {
 mark {
   background: none !important; }
 
+.woocommerce .woocommerce-form-login .woocommerce-form-login__rememberme {
+  display: flex;
+  align-items: center; }
+
+input#rememberme {
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-right: 1rem !important; }
+
 header {
   top: 0;
   left: 0;
