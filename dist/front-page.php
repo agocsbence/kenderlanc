@@ -14,7 +14,8 @@ get_header();
 	<div class="container">
 		<h1 class="mb-2">Ha kendered van, mindened van!</h1>
 		<div class="grid grid--home-tiles">
-			<a href="<?php echo get_home_url(); ?>/termekek" class="grid-tile big-tile title-top bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/nepszeru_termekek.png');">
+			<?php $src_termekek = wp_get_attachment_image_src( get_post_thumbnail_id(8), 'full', false ); ?>
+			<a href="<?php echo get_home_url(); ?>/termekek" class="grid-tile big-tile title-top bg--image" style="background-image: url('<?php echo $src_termekek[0] ?>');">
 				<div class="content">
 					<div class="content-inside">
 						<h2>Termékek</h2>
@@ -28,7 +29,8 @@ get_header();
 					</div>
 				</div>
 			</a>
-			<a href="<?php echo get_home_url(); ?>/szolgaltatasok" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/szolgaltatasok.png');">
+			<?php $src_szolg = wp_get_attachment_image_src( get_post_thumbnail_id(51), 'full', false ); ?>
+			<a href="<?php echo get_home_url(); ?>/szolgaltatasok" class="grid-tile bg--image" style="background-image: url('<?php echo $src_szolg[0] ?>');">
 				<div class="content">
 					<div class="content-inside">
 						<h2>Szolgáltatások</h2>
@@ -42,7 +44,8 @@ get_header();
 					</div>
 				</div>
 			</a>
-			<a href="<?php echo get_home_url(); ?>/partnerek" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/partnereink.png');">
+			<?php $src_partnerek = wp_get_attachment_image_src( get_post_thumbnail_id(244), 'full', false ); ?>
+			<a href="<?php echo get_home_url(); ?>/partnerek" class="grid-tile bg--image" style="background-image: url('<?php echo $src_partnerek[0] ?>');">
 				<div class="content">
 					<div class="content-inside">
 						<h2>Partnerek</h2>
