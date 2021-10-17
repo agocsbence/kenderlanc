@@ -5,7 +5,7 @@ get_header();
 
 <section class="container py-3">
     <h1 class="mb-1"><?php the_title(); ?></h1>
-    <div class="grid grid-4 grid-gap-1">
+    <div class="grid grid--home-tiles">
         <!-- loop here -->
         <?php
         
