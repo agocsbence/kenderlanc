@@ -76,3 +76,20 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 //remove add to cart button from listing
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+//order on search result page
+function order_search_by_posttype($orderby){
+    if (!is_admin() && is_search()) :
+        global $wpdb;
+        $orderby =
+            "
+            CASE WHEN {$wpdb->prefix}posts.post_type = 'products' THEN '1' 
+                 WHEN {$wpdb->prefix}posts.post_type = 'kenderlanc_cikkek' THEN '2' 
+                 WHEN {$wpdb->prefix}posts.post_type = 'post' THEN '3' 
+                 WHEN {$wpdb->prefix}posts.post_type = 'akademia_cikek' THEN '4' 
+            ELSE {$wpdb->prefix}posts.post_type END ASC, 
+            {$wpdb->prefix}posts.post_title ASC";
+    endif;
+    return $orderby;
+}
+add_filter('posts_orderby', 'order_search_by_posttype');
