@@ -780,6 +780,14 @@ input.qty {
 .woocommerce-variation-price {
   text-align: right; }
 
+@media screen and (min-width: 991px) {
+  .rolunk-lead {
+    max-width: 20rem; } }
+
+@media screen and (min-width: 991px) {
+  .team-wrapper {
+    columns: 2; } }
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
