@@ -785,6 +785,9 @@ input.qty {
     max-width: 40rem;
     margin: 0 auto; } }
 
+.team-wrapper .team-member img {
+  margin: 2rem 0; }
+
 @media screen and (min-width: 991px) {
   .team-wrapper {
     columns: 2; }

@@ -6,6 +6,11 @@
 }
 
 .team-wrapper {
+    .team-member {
+        img {
+            margin: 2rem 0;
+        }
+    }
     @media screen and (min-width: $tablet) {
         columns: 2;
         .team-member {
