@@ -92,4 +92,4 @@ function order_search_by_posttype($orderby){
     endif;
     return $orderby;
 }
-add_filter('posts_orderby', 'order_search_by_posttype');
+// add_filter('posts_orderby', 'order_search_by_posttype');
