@@ -55,8 +55,8 @@ get_header(); ?>
                         </div>
                         <?php if (get_field('csatolmany')) { ?>
                             <div class="attachment-block">
-                                <a href="<?php the_field('csatolmany'); ?>" download>Teljes anyag letöltése</a>
-                                <a href="<?php the_field('csatolmany'); ?>" target="blank">Teljes anyag megtekintése</a>
+                                <a href="<?php the_field('csatolmany'); ?>" download><h3>Teljes anyag letöltése</h3></a>
+                                <a href="<?php the_field('csatolmany'); ?>" target="blank"><h3>Teljes anyag megtekintése</h3></a>
                             </div>
                         <?php } ?>
                     </div>
