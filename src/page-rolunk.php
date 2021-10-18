@@ -16,7 +16,7 @@ get_header(); ?>
                 while( have_rows('csapat') ) : the_row(); ?>
 
                     <?php $sub_value = get_sub_field('sub_field');?>
-                    <div class="team-member">
+                    <div class="team-member mt-4">
                         <h2><?php the_sub_field('nev'); ?></h2>
                         <img src="<?php the_sub_field('kep'); ?>" alt="<?php the_sub_field('nev'); ?>">
                         <div class="member-description">
