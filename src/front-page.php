@@ -22,7 +22,7 @@ get_header();
 					</div>
 				</div>
 			</a>
-			<a href="<?php echo get_home_url(); ?>/akademia" class="grid-tile bg--color bg--color-orange">
+			<a href="<?php echo get_home_url(); ?>/tudastar" class="grid-tile bg--color bg--color-orange">
 				<div class="content">
 					<div class="content-inside">
 						<h2>Tudástár</h2>
