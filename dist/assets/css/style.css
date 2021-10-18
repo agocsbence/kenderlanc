@@ -786,7 +786,11 @@ input.qty {
 
 @media screen and (min-width: 991px) {
   .team-wrapper {
-    columns: 2; } }
+    columns: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 1000px; } }
 
 * {
   -webkit-font-smoothing: antialiased;
