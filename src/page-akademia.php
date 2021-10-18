@@ -53,6 +53,12 @@ get_header(); ?>
                         <div class="text-block">
                             <?php the_content(); ?>
                         </div>
+                        <?php if (get_field('csatolmany')) { ?>
+                            <div class="attachment-block">
+                                <a href="<?php the_field('csatolmany'); ?>" download>Teljes anyag letöltése</a>
+                                <a href="<?php the_field('csatolmany'); ?>" target="blank">Teljes anyag megtekintése</a>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             <?php 
