@@ -76,7 +76,7 @@
         </div>
         <nav>
             <a href="<?php echo get_home_url(); ?>/termekek" class="nav-item">Termékek</a>
-            <a href="<?php echo get_home_url(); ?>/szolgaltatasok" class="nav-item">Szolgáltatások</a>
+            <a href="<?php echo get_home_url(); ?>/kednerlanc-szolgaltatasok" class="nav-item">Szolgáltatások</a>
             <a href="<?php echo get_home_url(); ?>/magazin" class="nav-item">Magazin</a>
         </nav>
         <div class="sub-menu">
