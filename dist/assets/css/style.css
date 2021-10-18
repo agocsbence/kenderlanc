@@ -788,7 +788,10 @@ input.qty {
   .team-wrapper {
     columns: 2; }
     .team-wrapper .team-member {
-      break-inside: avoid-column; } }
+      break-inside: avoid-column; }
+      .team-wrapper .team-member img {
+        width: calc(100% - 6rem);
+        margin: 3rem; } }
 
 * {
   -webkit-font-smoothing: antialiased;
