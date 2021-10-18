@@ -1,0 +1,11 @@
+.rolunk-lead {
+    @media screen and (min-width: $tablet) {
+        max-width: 20rem;
+    }
+}
+
+.team-wrapper {
+    @media screen and (min-width: $tablet) {
+        columns: 2;
+    }
+}

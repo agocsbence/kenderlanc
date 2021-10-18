@@ -856,8 +856,7 @@ h3.sub {
 li,
 p {
   font-size: 17px;
-  line-height: 22px;
-  font-weight: 700; }
+  line-height: 22px; }
 
 .text-block p {
   font-weight: 300;
