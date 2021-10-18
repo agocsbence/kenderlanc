@@ -15,13 +15,13 @@ get_header(); ?>
     <?php if ( have_posts() ) : ?>
 
         <h2 class="mb-2">Termékek</h2>
-        <div class="grid grid--home-tiles">
+        <div class="grid grid-4 grid-gap-1">
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <?php if ($post->post_type == 'product') { ?>
                     <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
                         <?php echo woocommerce_get_product_thumbnail(); ?>
-                        <h2 class="product-name"><?php echo get_the_title(); ?></h2>
+                        <h2 class="name"><?php echo get_the_title(); ?></h2>
                         <?php
                         // $post_type = get_post_type( $post->ID );
                         // echo $post_type;
@@ -33,14 +33,14 @@ get_header(); ?>
         </div>
         <hr>
         <h2 class="mb-2">Cikkek</h2>
-        <div class="grid grid--home-tiles">
+        <div class="grid grid-4 grid-gap-1">
             <?php rewind_posts(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <?php if ($post->post_type == 'kenderlanc_cikkek') { ?>
                     <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
                         <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
-                        <h2 class="product-name"><?php echo get_the_title(); ?></h2>
+                        <h2 class="name"><?php echo get_the_title(); ?></h2>
                     </a>
                 <?php } ?>
 
@@ -48,14 +48,14 @@ get_header(); ?>
         </div>
         <hr>
         <h2 class="mb-2">Lexikon</h2>
-        <div class="grid grid--home-tiles">
+        <div class="grid grid-4 grid-gap-1">
             <?php rewind_posts(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <?php if ($post->post_type == 'post') { ?>
                     <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
                         <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
-                        <h2 class="product-name"><?php echo get_the_title(); ?></h2>
+                        <h1 class="name"><?php echo get_the_title(); ?></h1>
                     </a>
                 <?php } ?>
 
@@ -63,14 +63,14 @@ get_header(); ?>
         </div>
         <hr>
         <h2 class="mb-2">Tudástár</h2>
-        <div class="grid grid--home-tiles">
+        <div class="grid grid-4 grid-gap-1">
             <?php rewind_posts(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <?php if ($post->post_type == 'akademia_cikkek') { ?>
                     <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
                         <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
-                        <h2 class="product-name"><?php echo get_the_title(); ?></h2>
+                        <h2 class="name"><?php echo get_the_title(); ?></h2>
                     </a>
                 <?php } ?>
 
