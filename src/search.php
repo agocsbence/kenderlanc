@@ -21,7 +21,7 @@ get_header(); ?>
                 <?php if ($post->post_type == 'product') { ?>
                     <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
                         <?php echo woocommerce_get_product_thumbnail(); ?>
-                        <h2 class="name"><?php echo get_the_title(); ?></h2>
+                        <h4 class="name"><?php echo get_the_title(); ?></h4>
                         <?php
                         // $post_type = get_post_type( $post->ID );
                         // echo $post_type;
@@ -40,7 +40,7 @@ get_header(); ?>
                 <?php if ($post->post_type == 'kenderlanc_cikkek') { ?>
                     <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
                         <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
-                        <h2 class="name"><?php echo get_the_title(); ?></h2>
+                        <h4 class="name"><?php echo get_the_title(); ?></h4>
                     </a>
                 <?php } ?>
 
@@ -54,8 +54,7 @@ get_header(); ?>
 
                 <?php if ($post->post_type == 'post') { ?>
                     <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
-                        <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
-                        <h1 class="name"><?php echo get_the_title(); ?></h1>
+                        <h4 class="name"><?php echo get_the_title(); ?></h4>
                     </a>
                 <?php } ?>
 
@@ -70,7 +69,7 @@ get_header(); ?>
                 <?php if ($post->post_type == 'akademia_cikkek') { ?>
                     <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
                         <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
-                        <h2 class="name"><?php echo get_the_title(); ?></h2>
+                        <h4 class="name"><?php echo get_the_title(); ?></h4>
                     </a>
                 <?php } ?>
 
