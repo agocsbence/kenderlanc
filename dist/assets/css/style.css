@@ -782,7 +782,8 @@ input.qty {
 
 @media screen and (min-width: 991px) {
   .rolunk-lead {
-    max-width: 40rem; } }
+    max-width: 40rem;
+    margin: 0 auto; } }
 
 @media screen and (min-width: 991px) {
   .team-wrapper {
