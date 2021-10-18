@@ -30,7 +30,7 @@ get_header();
 				</div>
 			</a>
 			<?php $src_szolg = wp_get_attachment_image_src( get_post_thumbnail_id(51), 'full', false ); ?>
-			<a href="<?php echo get_home_url(); ?>/kednerlanc-szolgaltatasok" class="grid-tile bg--image" style="background-image: url('<?php echo $src_szolg[0] ?>');">
+			<a href="<?php echo get_home_url(); ?>/kenderlanc-szolgaltatasok" class="grid-tile bg--image" style="background-image: url('<?php echo $src_szolg[0] ?>');">
 				<div class="content">
 					<div class="content-inside">
 						<h2>Szolgáltatások</h2>
