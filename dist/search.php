@@ -14,20 +14,40 @@ get_header(); ?>
 
     <?php if ( have_posts() ) : ?>
 
-        <div class="grid grid--home-tiles">
-            <?php /* Start the Loop */ ?>
+        <h2>Termékek</h2>
+        <div class="grid grid-4">
             <?php while ( have_posts() ) : the_post(); ?>
 
-                <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
-                    <?php echo woocommerce_get_product_thumbnail(); ?>
-                    <h2 class="product-name"><?php echo get_the_title(); ?></h2>
-                    <?php
-                    $post_type = get_post_type( $post->ID );
-                    echo $post_type;
-                    ?>
-                </a>
+                <?php if ($post->post_type == 'product') { ?>
+                    <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
+                        <h2 class="product-name"><?php echo get_the_title(); ?></h2>
+                        <?php
+                        $post_type = get_post_type( $post->ID );
+                        echo $post_type;
+                        ?>
+                    </a>
+                <?php } ?>
 
             <?php endwhile; ?>
+        </div>
+        <hr>
+        <h2>Cikkek</h2>
+        <div class="grid grid-4">
+            <?php rewind_posts(); ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+
+                <?php if ($post->post_type == 'kenderlanc_cikkek') { ?>
+                    <a href="<?php echo get_permalink(); ?>" class="product-tile mb-1">
+                        <?php echo woocommerce_get_product_thumbnail(); ?>
+                        <h2 class="product-name"><?php echo get_the_title(); ?></h2>
+                        <?php
+                        $post_type = get_post_type( $post->ID );
+                        echo $post_type;
+                        ?>
+                    </a>
+                <?php } ?>
+
+            <?php endwhile; ?> 
         </div>
 
     <?php else : ?>
