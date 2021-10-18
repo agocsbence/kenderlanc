@@ -7,9 +7,8 @@
 .team-wrapper {
     @media screen and (min-width: $tablet) {
         columns: 2;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-height: 1000px;
+        .team-member {
+            break-inside: avoid-column;
+        }
     }
 }
