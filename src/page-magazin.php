@@ -47,7 +47,8 @@ get_header(); ?>
                 </div>
             </div>
         </a>
-        <a href="<?php echo get_home_url(); ?>/kenderlanc" class="grid-tile bg--image" style="background-image: url('<?php bloginfo('template_url') ?>/assets/img/kender.png');">
+        <?php $src_kender = wp_get_attachment_image_src( get_post_thumbnail_id(271), 'full', false ); ?>
+        <a href="<?php echo get_home_url(); ?>/kenderlanc" class="grid-tile bg--image" style="background-image: url('<?php echo $src_kender[0]; ?>');">
             <div class="content">
                 <div class="content-inside">
                     <h2>Cikkek</h2>
