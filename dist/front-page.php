@@ -37,7 +37,7 @@ get_header();
 					</div>
 				</div>
 			</a>
-			<a href="<?php echo get_home_url(); ?>/magazin" id="grid-extra" class="grid-tile big-tile bg--color-green1 text-dark">
+			<a href="<?php echo get_home_url(); ?>/magazin" id="grid-extra" class="grid-tile bg--color-green1 text-dark">
 				<div class="content">
 					<div class="content-inside">
 						<h2>Magazin</h2>
