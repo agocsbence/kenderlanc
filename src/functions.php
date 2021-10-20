@@ -100,3 +100,21 @@ function my_admin_bar_render() {
     $wp_admin_bar->remove_menu('comments');
 }
 add_action( 'wp_before_admin_bar_render', 'my_admin_bar_render' );
+
+//custom taxonomy to custom post type
+function themes_taxonomy() {
+    register_taxonomy(
+        'cikk_kategoriak',
+        'kenderlanc_cikkek',
+        array(
+            'hierarchical' => true,
+            'label' => 'Cikk kategória',
+            'query_var' => true,
+            'rewrite' => array(
+                'slug' => 'kenderlanc_cikkek/kategoria',
+                'with_front' => false
+            )
+        )
+    );
+}
+add_action( 'init', 'themes_taxonomy');
