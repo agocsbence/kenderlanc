@@ -37,21 +37,21 @@ get_header();
 					</div>
 				</div>
 			</a>
-			<a href="<?php echo get_home_url(); ?>/magazin" id="grid-extra" class="grid-tile big-tile bg--color-green1 mobile-only">
+			<a href="<?php echo get_home_url(); ?>/magazin" id="grid-extra" class="grid-tile big-tile bg--color-green1 text-dark">
 				<div class="content">
 					<div class="content-inside">
 						<h2>Magazin</h2>
 					</div>
 				</div>
 			</a>
-			<?php $src_partnerek = wp_get_attachment_image_src( get_post_thumbnail_id(244), 'full', false ); ?>
-			<a href="<?php echo get_home_url(); ?>/partnerek" class="grid-tile bg--image" style="background-image: url('<?php echo $src_partnerek[0] ?>');">
+			<?php // $src_partnerek = wp_get_attachment_image_src( get_post_thumbnail_id(244), 'full', false ); ?>
+			<!-- <a href="<?php // echo get_home_url(); ?>/partnerek" class="grid-tile bg--image" style="background-image: url('<?php // echo $src_partnerek[0] ?>');">
 				<div class="content">
 					<div class="content-inside">
 						<h2>Partnerek</h2>
 					</div>
 				</div>
-			</a>
+			</a> -->
 			<a href="<?php echo get_home_url(); ?>/lexikon" class="grid-tile bg--color bg--color-green">
 				<div class="content">
 					<div class="content-inside">
