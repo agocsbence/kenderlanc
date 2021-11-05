@@ -41,7 +41,8 @@ get_header(); ?>
         if ( $loop->have_posts() ) :
             while ( $loop->have_posts() ) : $loop->the_post();
             $id = get_the_ID();
-            $image = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full', false ); ?>
+            $image = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full', false );
+            var_dump($image); ?>
 
                 <a href="<?php echo get_permalink(); ?>" class="grid-tile bg--color" style="background-color: <?php the_field('csempe_szine'); ?>">
                     <div class="content">
