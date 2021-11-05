@@ -131,7 +131,8 @@ table {
   font-style: italic; }
 
 .aligncenter {
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex; }
 
 .woocommerce #content div.product div.summary,
 .woocommerce div.product div.summary,
