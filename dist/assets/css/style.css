@@ -557,7 +557,8 @@ form input[type="submit"] {
 
 .accordion-wrapper .accordion .accordion-content {
   height: 0;
-  display: none; }
+  display: none;
+  margin-bottom: 4rem; }
 
 .swiper-slide {
   background-size: cover;
