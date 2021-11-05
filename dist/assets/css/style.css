@@ -406,13 +406,16 @@ header {
 footer {
   background: #d8d8d830;
   color: #172d22;
-  padding: 3rem 0;
+  padding: 2rem 0;
   font-weight: bold; }
   footer input {
     width: 100%;
     border: 0;
     border-bottom: 2px solid #172d22;
     background: transparent; }
+  footer label,
+  footer .footer-menu {
+    font-size: 70%; }
 
 .product-tile img {
   border-radius: 20px; }
