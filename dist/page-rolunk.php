@@ -29,7 +29,7 @@ get_header(); ?>
         <?php endif; ?>
     </div>
     <div class="rolunk-team mb-4">
-        <h2>Cégünk (0)</h2>
+        <h2>Cégünk</h2>
         <div class="member-description">
             <?php the_field('cegunk'); ?>
         </div>
