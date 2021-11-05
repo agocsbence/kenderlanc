@@ -7,36 +7,6 @@ get_header(); ?>
 <div class="container">
     <h1 class="mb-2"><?php the_title(); ?></h1>
     <div class="grid grid--home-tiles">
-        <a href="<?php echo get_home_url(); ?>/szolgaltatas/magtol-a-termekig" class="grid-tile big-tile title-top bg--color bg--color-green">
-            <div class="content">
-                <div class="content-inside">
-                    <h2>Magtól a termékig</h2>
-                </div>
-            </div>
-        </a>
-        <a href="<?php echo get_home_url(); ?>/szolgaltatas/jogsegely" id="jogsegely" class="grid-tile bg--color bg--color-red">
-            <div class="content">
-                <div class="content-inside">
-                    <h2>Jogsegély</h2>
-                </div>
-            </div>
-        </a>
-        <a href="<?php echo get_home_url(); ?>/szolgaltatas/forgalmazas" class="grid-tile bg--color bg--color-orange">
-            <div class="content">
-                <div class="content-inside">
-                    <h2>Forgalmazás</h2>
-                </div>
-            </div>
-        </a>
-        <a href="<?php echo get_home_url(); ?>/szolgaltatas/rendezveny" class="grid-tile bg--color bg--color-green">
-            <div class="content">
-                <div class="content-inside">
-                    <h2>Rendezvény</h2>
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="grid grid--home-tiles">
         <!-- loop here -->
         <?php
         
@@ -73,7 +43,7 @@ get_header(); ?>
             $id = get_the_ID();
             $image = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full', false ); ?>
 
-                <a href="<?php echo get_permalink(); ?>" class="grid-tile bg--color">
+                <a href="<?php echo get_permalink(); ?>" class="grid-tile bg--color" style="background-color: <?php the_field('csempe_szine'); ?>">
                     <div class="content">
                         <div class="content-inside">
                             <h2><?php the_title(); ?></h2>
