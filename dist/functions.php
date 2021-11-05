@@ -69,7 +69,7 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_show_product_imag
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs');
 //replace short descripiton
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 10);
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
 //remove price hook (added directly to thumbnails hook)
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
 //remove product meta
