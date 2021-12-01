@@ -13,13 +13,13 @@ get_header(); ?>
 
         <?php $tags = get_tags(array( 'hide_empty' => false ));?>
 
-        <form action="">
+        <form class="controls" action="">
             <div class="filter-content">
                 <?php 
                 foreach ($tags as $tag) { ?>
-                    <div class="filter">
-                        <label for="<?php echo $tag->slug; ?>"><?php echo $tag->name; ?></label>
-                        <input type="checkbox" name="<?php echo $tag->slug; ?>" id="" value="<?php echo $tag->slug; ?>">
+                    <div class="filter checkbox">
+                        <label class="checkbox-label" for="<?php echo $tag->slug; ?>"><?php echo $tag->name; ?></label>
+                        <input type="checkbox" name="<?php echo $tag->slug; ?>" id="" value="<?php echo '.' . $tag->slug; ?>">
                     </div>
                 <?php } ?>
             </div>
@@ -36,7 +36,7 @@ get_header(); ?>
             while ( $loop->have_posts() ) : $loop->the_post();
             $id = get_the_ID();
             $tags = wp_get_post_tags($id);?>
-                <div class="accordion
+                <div class="accordion mix
                     <?php //add specified classes for filtering
                     echo 'akademia-id-'.$id.' ';
                     foreach ( $tags as $tag ) {
@@ -71,6 +71,7 @@ get_header(); ?>
     </div>
 </section>
 
+<script src="<?php bloginfo('template_url') ?>/assets/js/mixitup-multifilter.min.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/filter.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/accordion.js"></script>
 
