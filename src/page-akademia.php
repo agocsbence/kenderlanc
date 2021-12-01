@@ -71,6 +71,7 @@ get_header(); ?>
     </div>
 </section>
 
+<script src="<?php bloginfo('template_url') ?>/assets/js/mixitup.min.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/mixitup-multifilter.min.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/filter.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/js/accordion.js"></script>
