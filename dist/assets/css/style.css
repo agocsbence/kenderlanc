@@ -610,7 +610,7 @@ form input[type="submit"] {
 
 .grid--home-tiles {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
   margin-bottom: 6.5rem; }
   @media screen and (min-width: 991px) {
