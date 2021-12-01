@@ -46,8 +46,25 @@ get_header(); ?>
     </div>
 </section>
 <div class="container">
-    <div class="my-4 text-center partnerek-logo">
+    <div class="my-4 text-center partnerek-logo flex flex-row flex-row-center">
         <img src="<?php bloginfo('template_url') ?>/assets/img/partnerek.png" alt="Kenderlánc partnerek">
+        <!-- loop here -->
+        <?php
+        
+        $loop = new WP_Query( array( 'post_type' => 'partnerek' ) );
+        
+        if ( $loop->have_posts() ) :
+            while ( $loop->have_posts() ) : $loop->the_post();
+            $id = get_the_ID();
+            $image = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full', false ); ?>
+                <img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
+            <?php 
+            endwhile;
+        endif;
+        wp_reset_postdata();
+        ?>
+
+        <!-- end of loop -->
     </div>
 </div>
 <script src="<?php bloginfo('template_url') ?>/assets/js/accordion.js"></script>
