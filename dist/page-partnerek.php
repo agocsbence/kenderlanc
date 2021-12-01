@@ -60,8 +60,7 @@ get_header(); ?>
                 <?php if ($image) { ?>
                     <img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
                 <?php } ?>
-            <?php }
-            endwhile;
+            <?php endwhile;
         endif;
         wp_reset_postdata();
         ?>
