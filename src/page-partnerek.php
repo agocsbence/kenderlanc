@@ -47,7 +47,7 @@ get_header(); ?>
 </section>
 <div class="container">
     <div class="my-4 text-center partnerek-logo flex flex-row flex-row-center">
-        <img src="<?php bloginfo('template_url') ?>/assets/img/partnerek.png" alt="Kenderlánc partnerek">
+        <!-- <img src="<?php // bloginfo('template_url') ?>/assets/img/partnerek.png" alt="Kenderlánc partnerek"> -->
         <!-- loop here -->
         <?php
         
@@ -57,8 +57,10 @@ get_header(); ?>
             while ( $loop->have_posts() ) : $loop->the_post();
             $id = get_the_ID();
             $image = wp_get_attachment_image_src( get_post_thumbnail_id($id), 'full', false ); ?>
-                <img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
-            <?php 
+                <?php if ($image) { ?>
+                    <img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
+                <?php } ?>
+            <?php }
             endwhile;
         endif;
         wp_reset_postdata();
