@@ -14,15 +14,15 @@ get_header(); ?>
         <?php $tags = get_tags(array( 'hide_empty' => false ));?>
 
         <form class="controls" action="">
-            <div class="filter-content">
+            <fieldset class="filter-content" data-filter-group>
                 <?php 
                 foreach ($tags as $tag) { ?>
                     <div class="filter checkbox">
                         <label class="checkbox-label" for="<?php echo $tag->slug; ?>"><?php echo $tag->name; ?></label>
-                        <input type="checkbox" name="<?php echo $tag->slug; ?>" id="" value="<?php echo '.' . $tag->slug; ?>">
+                        <input type="checkbox" name="<?php echo $tag->slug; ?>" value="<?php echo '.' . $tag->slug; ?>">
                     </div>
                 <?php } ?>
-            </div>
+            </fieldset>
         </form>
     </div>
     <div class="accordion-wrapper">
