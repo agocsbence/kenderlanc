@@ -112,6 +112,8 @@ table {
     justify-content: space-between; }
   .flex.flex-justify-center {
     justify-content: center; }
+  .flex.flex-wrap {
+    flex-wrap: wrap; }
   @media screen and (max-width: 991px) {
     .flex.flex-m-column {
       flex-direction: column; } }

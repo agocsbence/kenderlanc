@@ -46,7 +46,7 @@ get_header(); ?>
     </div>
 </section>
 <div class="container">
-    <div class="my-4 text-center partnerek-logo flex flex-row flex-row-center flex-justify-center">
+    <div class="my-4 text-center partnerek-logo flex flex-row flex-row-center flex-justify-center flex-wrap">
         <!-- <img src="<?php // bloginfo('template_url') ?>/assets/img/partnerek.png" alt="Kenderlánc partnerek"> -->
         <!-- loop here -->
         <?php

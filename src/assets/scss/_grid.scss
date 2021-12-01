@@ -80,6 +80,9 @@
     &.flex-justify-center {
         justify-content: center;
     }
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
     &.flex-m-column {
         @media screen and (max-width: $tablet) {
             flex-direction: column;
