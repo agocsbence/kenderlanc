@@ -5,9 +5,9 @@
                 <div>
                     <div class="footer-icons">
                         <div class="icon-list flex flex-row flex-row-center mb-1">
-                            <a href="" class="mr-1"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/facebook.svg" alt="Facebook"></a>
-                            <a href="" class="mr-1"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/youtube.svg" alt="Youtube"></a>
-                            <a href="" class="mr-1"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/instagram.svg" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/kenderlanc/" target="blank" class="mr-1"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/facebook.svg" alt="Facebook"></a>
+                            <a href="https://www.youtube.com/channel/UCZ-A6k90aFxj8A_ift8gowQ/featured" target="blank" class="mr-1"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/youtube.svg" alt="Youtube"></a>
+                            <a href="https://www.instagram.com/kenderlanc/" target="blank" class="mr-1"><img src="<?php bloginfo('template_url') ?>/assets/img/icons/instagram.svg" alt="Instagram"></a>
                         </div>
                         <img src="<?php bloginfo('template_url') ?>/assets/img/icons/cards.png" alt="Fizetési módok" class="mb-1">
                     </div>
