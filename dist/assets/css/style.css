@@ -110,6 +110,8 @@ table {
     align-items: flex-start; }
   .flex.flex-space-between {
     justify-content: space-between; }
+  .flex.flex-justify-center {
+    justify-content: center; }
   @media screen and (max-width: 991px) {
     .flex.flex-m-column {
       flex-direction: column; } }

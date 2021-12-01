@@ -77,6 +77,9 @@
     &.flex-space-between {
         justify-content: space-between;
     }
+    &.flex-justify-center {
+        justify-content: center;
+    }
     &.flex-m-column {
         @media screen and (max-width: $tablet) {
             flex-direction: column;
