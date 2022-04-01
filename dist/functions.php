@@ -118,3 +118,16 @@ function themes_taxonomy() {
     );
 }
 add_action( 'init', 'themes_taxonomy');
+
+add_filter('woocommerce_is_purchasable', 'my_woocommerce_is_purchasable', 10, 2);
+function my_woocommerce_is_purchasable($is_purchasable, $product) {
+$product_category = array('nagykereskedelem','nagykereskedelem');
+$product_category_check = $product->get_categories();
+foreach($product_category as $value){
+if(strpos($product_category_check, $value)){
+    return false;
+}else{
+    return true;
+}
+}    
+}
