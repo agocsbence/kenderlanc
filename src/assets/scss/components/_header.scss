@@ -17,6 +17,7 @@ header {
     padding: 1rem;
     .header-logo {
         grid-area: logo;
+        z-index: 999;
         img {
             max-width: 5rem;
         }
