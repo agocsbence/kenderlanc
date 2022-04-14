@@ -13,10 +13,10 @@
     &.opened {
         display: block;
         .header-logo {
+            opacity: 0;
             @media screen and (min-width: $tablet) {
                 margin-top: 0 !important;
-                margin-left: 39px !important;
-                opacity: 0;
+                margin-left: 0 !important; //39px
             }
         }
     }

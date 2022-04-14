@@ -381,11 +381,12 @@ header {
       width: 26vw; } }
   .navbar.opened {
     display: block; }
-    @media screen and (min-width: 991px) {
-      .navbar.opened .header-logo {
-        margin-top: 0 !important;
-        margin-left: 39px !important;
-        opacity: 0; } }
+    .navbar.opened .header-logo {
+      opacity: 0; }
+      @media screen and (min-width: 991px) {
+        .navbar.opened .header-logo {
+          margin-top: 0 !important;
+          margin-left: 0 !important; } }
   .navbar .header-icon {
     margin-top: 1rem; }
   .navbar nav {
