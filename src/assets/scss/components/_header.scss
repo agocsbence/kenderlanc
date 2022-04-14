@@ -24,7 +24,7 @@ header {
     #desktopMenuClose {
         grid-area: menu;
         align-self: start;
-        justify-self: center;
+        justify-self: flex-start;
         margin-top: 0;
     }
     .header-icons {
@@ -60,7 +60,7 @@ header {
         justify-self: end;
         @media screen and (min-width: $tablet) {
             align-self: start;
-            justify-self: center;
+            justify-self: start;
         }
     }
     .header-search {

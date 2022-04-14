@@ -12,6 +12,12 @@
     }
     &.opened {
         display: block;
+        .header-logo {
+            @media screen and (min-width: $tablet) {
+                margin-top: 0 !important;
+                margin-left: 39px !important;
+            }
+        }
     }
     .header-icon {
         margin-top: 1rem;

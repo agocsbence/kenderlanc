@@ -317,7 +317,7 @@ header {
   .header-grid #desktopMenuClose {
     grid-area: menu;
     align-self: start;
-    justify-self: center;
+    justify-self: flex-start;
     margin-top: 0; }
   .header-grid .header-icons {
     grid-area: icons;
@@ -350,7 +350,7 @@ header {
     @media screen and (min-width: 991px) {
       .header-grid .header-menu {
         align-self: start;
-        justify-self: center; } }
+        justify-self: start; } }
   .header-grid .header-search {
     grid-area: search;
     justify-self: end;
@@ -380,6 +380,10 @@ header {
       width: 26vw; } }
   .navbar.opened {
     display: block; }
+    @media screen and (min-width: 991px) {
+      .navbar.opened .header-logo {
+        margin-top: 0 !important;
+        margin-left: 39px !important; } }
   .navbar .header-icon {
     margin-top: 1rem; }
   .navbar nav {
