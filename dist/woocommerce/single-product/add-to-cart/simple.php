@@ -25,45 +25,48 @@ if ( ! $product->is_purchasable() ) {
 
 echo wc_get_stock_html( $product ); // WPCS: XSS ok.
 
-if ( $product->is_in_stock() ) : ?>
-
-	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
+?>
 
 	<div>
 		<!-- short description -->
 		<div class="woocommerce-product-details__short-description">
 			<?php the_content(); // WPCS: XSS ok. ?>
 		</div>
-		<!-- price -->
-		<h3 class="mb-1 <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></h3>
+		
+		<?php if ( $product->is_in_stock() ) : ?>
 
-		<form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
-			<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
+		<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
+		
+			<!-- price -->
+			<h3 class="mb-1 <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></h3>
 
-			<div class="quantity-wrapper flex flex-row-center">
-				<?php
-				do_action( 'woocommerce_before_add_to_cart_quantity' );
+			<form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
+				<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-				woocommerce_quantity_input(
-					array(
-						'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
-						'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
-						'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
-					)
-				);
+				<div class="quantity-wrapper flex flex-row-center">
+					<?php
+					do_action( 'woocommerce_before_add_to_cart_quantity' );
 
-				do_action( 'woocommerce_after_add_to_cart_quantity' );
-				?>
+					woocommerce_quantity_input(
+						array(
+							'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
+							'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
+							'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
+						)
+					);
 
-				<span><?php the_field('mertekegyseg'); ?></span>
-			</div>
+					do_action( 'woocommerce_after_add_to_cart_quantity' );
+					?>
 
-			<div class="text-right">
-				<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-			</div>
+					<span><?php the_field('mertekegyseg'); ?></span>
+				</div>
 
-			<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-		</form>
+				<div class="text-right">
+					<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+				</div>
+
+				<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+			</form>
 	</div>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
