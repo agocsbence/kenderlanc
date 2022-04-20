@@ -12,7 +12,7 @@ get_header();
 
 <section id="home-hero">
 	<div class="container">
-		<h1 class="mb-2">Ha kendered van, mindened van!</h1>
+		<h1 class="mb-2"><?php the_field('motto', 'option'); ?></h1>
 		<div class="grid grid--home-tiles">
 			<?php $src_termekek = wp_get_attachment_image_src( get_post_thumbnail_id(8), 'full', false ); ?>
 			<a href="<?php echo get_home_url(); ?>/termekek" class="grid-tile big-tile title-top bg--image" style="background-image: url('<?php echo $src_termekek[0] ?>');">

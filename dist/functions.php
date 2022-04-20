@@ -124,3 +124,14 @@ function themes_taxonomy() {
     );
 }
 add_action( 'init', 'themes_taxonomy');
+
+//add page options field
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'Általános beállítások',
+		'menu_title'	=> 'Általános beállítások',
+		'menu_slug' 	=> 'altalanos-beallitasok',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+}
